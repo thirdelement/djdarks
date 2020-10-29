@@ -1,6 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700|Geostar|Londrina+Shadow');*/
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline&family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&display=swap');
 
 /*-------------------------------------------------Header */
 #logo {
@@ -9,11 +9,15 @@
    margin-left: 30px; 
    margin-right: 20px;
    font-family: "Londrina Outline", sans-serif;
-   font-weight: 300;
-   font-size: 4.5em;
+   font-weight: 600;
+   font-size: 5.5em;
+   color: black;
 }
 
 #logo-sub {
     float: left;
-    margin-top: 0.5rem;
+    margin-top: 4rem;
+    font-family: "Audiowide";
 }
+
+
