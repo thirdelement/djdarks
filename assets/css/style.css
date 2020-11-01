@@ -1,63 +1,55 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700|Geostar|Londrina+Shadow');*/
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&display=swap");
 
-/*-------------------------------------------------Header */
+/*-------------------------------------------------Navbar */
 #logo {
-   /*float: left;
+  /*float: left;
    margin-top: 0.5rem;
    margin-left: 30px; 
    margin-right: 20px;*/
-   font-family: "Audiowide";
-   /*font-weight: 600;
+  font-family: "Audiowide";
+  /*font-weight: 600;
    font-size: 5em;
    color: black;*/
 }
 
-
 #logo-sub {
-    /*float: left;
+  /*float: left;
     margin-top: 4.5rem;
     margin-left: 1rem;
     font-family: "Audiowide";
     color: black;*/
-    display:inline;
-    font-family: "Audiowide";
+  display: inline;
+  font-family: "Audiowide";
 }
 
 #logo-nav {
-    display:inline-block;
+  display: inline-block;
 }
 
-/*
-.nav-link {
-    color: black;
+.navbar-light .navbar-brand {
+    color: #f8f9fa;
 }
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #f8f9fa;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+} 
 
 .menu-item {
     margin-left: 3em;
 }
 
-.ml-auto {
-    /*margin-left: 8em;
-    margin-top: 3em;
-}
-
-.ml-auto, .mx-auto {
-    margin-top: 3em;
-    margin-right: 5em;
-}
-
-.navbar-toggler-icon {
-    background-color: grey;
-}*/
-
-/*.navbar-brand {
-    font-family: "Audiowide";
-}
-*/
-
-.move-right {
-    text-align: right; 
-}
 
