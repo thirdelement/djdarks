@@ -29,15 +29,18 @@
 }
 
 .navbar-light .navbar-brand {
-    color: #f8f9fa;
+  color: #f8f9fa;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #f8f9fa;
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f8f9fa;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #f8f9fa;
+  color: #f8f9fa;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -46,10 +49,26 @@
 
 .custom-toggler.navbar-toggler {
   border-color: transparent;
-} 
-
-.menu-item {
-    margin-left: 3em;
 }
 
+.menu-item {
+  margin-left: 3em;
+}
 
+/*--------------------------------------------------------About--*/
+.container-about {
+  background: url(assets/images/croydon.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img-croydon {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+  width: 100%;
+}
