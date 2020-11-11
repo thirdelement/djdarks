@@ -28,6 +28,10 @@
   display: inline-block;
 }
 
+.navbar-light {
+  background-color: black;
+}
+
 .navbar-light .navbar-brand {
   color: #f8f9fa;
 }
@@ -55,20 +59,132 @@
   margin-left: 3em;
 }
 
-/*--------------------------------------------------------About--*/
-.container-about {
-  background: url(assets/images/croydon.jpg) no-repeat center center;
+/*--------------------------------------------------------Home--*/
+/*.container-home {
+  background: url("eclipse.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}*/
+
+.container-home {
+  height: 100vh;
+  background: url("../images/eclipse.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.img-croydon {
+/*.jumbotron {
+    background-color: transparent;
+}*/
+
+.col {
+    max-width: 75%;
+}
+
+.form-group{
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+.form-label{
+    color: white;
+}
+
+p{
+color: white;
+}
+
+/*--------------------------------------------------------About--*/
+.container-about {
+  height: 100vh;
+  background: url("../images/croydon.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*--------------------------------------------------------Mixes--*/
+.container-mixes {
+  height: 100vh;
+  background: url(../images/london-outside-people.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*--------------------------------------------------------Dates--*/
+.container-dates {
+  height: 100vh;
+  background: url(../images/djdecks.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*--------------------------------------------------------Contact--*/
+.container-contact {
+  height: 100vh;
+  background: url(../images/streetlights.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*.img-croydon {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100%;
   width: 100%;
+}*/
+
+/*----------------------------------------------------------------Media Queries*/
+
+@media (max-width: 400px) {
+    #logo-sub{
+       font-size: 0.75rem;
+       /*display: none;*/
+    }
+    /*#logo-sub{
+  display:none;
+  font-size:0.75rem;*/
 }
+
+/*@media (min-width: 992px){
+#logo {
+  font-size: 5rem;
+}
+}
+/*@media (min-width: 992px){
+.navbar-expand-lg {
+  background-color: red !important;
+}
+}*/

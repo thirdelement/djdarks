@@ -20,19 +20,19 @@
   </head>
 
   <body>
-    <img
+    <!--<img
       src="assets/images/eclipse.jpg"
       class="img-fluid"
       alt="responsive background image"
-    />
+    />-->
     <!--Bootstrap Navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item" id="logo-nav">
             <a class="navbar-brand" href="index.html">
-              <h1 id="logo">DRKS</h1></a
-            >
+              <h1 id="logo">DRKS</h1>
+            </a>
             <h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>
           </li>
         </ul>
@@ -51,35 +51,127 @@
 
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
           <ul class="navbar-nav ml-auto">
-            <li class="active nav-item mr-2">
-              <a class="nav-link" href="/">Home</a>
+            <li
+              class="active nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/about">About</a>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/about">Mixes</a>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#mixes">Mixes</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/about">Dates</a>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#dates">Dates</a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/about">Contact</a>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
           </ul>
         </div>
       </div>
-      <!--Code Navbar from here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
+      <!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
     </nav>
-    <section>
-      <!--section class="container-about"-->
-      <img
+    <section id="home">
+      <div class="container-fluid container-home">
+      <div class="col"></div>
+        <div class="row">
+          <!-- <div class="col-12">
+					<section class="jumbotron text-center">
+						<h1 class="jumbotron-header"><i class="fas fa-sliders-h"></i> The finest DJs delivered to your
+							house party.</h1>
+						<hr>
+						<p class="lead">
+							Sign up today to start receiving a new mix every
+							month. <s class="d-none d-sm-inline">£19.99</s>
+							<span class="d-inline d-sm-none"><br /></span>
+							<strong><mark>First one is free!</mark></strong>
+						</p>
+						<button
+              class="btn btn-lg btn--cta btn--red"
+              data-toggle="modal"
+              data-target="#signUpModal"
+            >
+              Sign Up!
+            </button>
+						<p class="text-muted">
+							<small
+                >You must be over 18 to sign up to our service. Please drink
+                responsibly.</small>
+						</p>
+					</section>
+				</div>-->
+                
+          <form>
+            <div class="form-group">
+              <label for="formGroupfirstname" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupfirstname"
+                placeholder="First name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="formGroupsecondname" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupsecondname"
+                placeholder="Second name"
+              />
+              </div>
+                <div class="form-group">
+              <label for="formGroupemail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupemail"
+                placeholder="Email"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <!--section class="container-about"
+		<img
         src="assets/images/croydon.jpg"
         class="img-fluid img-croydon"
         alt="responsive background image"
       />
-      <!--<div class="container-fluid">
-</div>-->
+		<div class="container-fluid">-->
+      <div class="container-fluid container-about"></div>
+    </section>
+    <section id="mixes">
+      <div class="container-fluid container-mixes"></div>
+    </section>
+    <section id="dates">
+      <div class="container-fluid container-dates"></div>
+    </section>
+    <section id="contact">
+      <div class="container-fluid container-contact"></div>
     </section>
     <footer></footer>
     <script
