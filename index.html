@@ -94,9 +94,9 @@
     </nav>
     <section id="home">
       <div class="container-fluid container-home">
-      <div class="col"></div>
+      <!-- <div class="col"></div>
         <div class="row">
-          <!-- <div class="col-12">
+          <div class="col-12">
 					<section class="jumbotron text-center">
 						<h1 class="jumbotron-header"><i class="fas fa-sliders-h"></i> The finest DJs delivered to your
 							house party.</h1>
@@ -122,8 +122,8 @@
 					</section>
 				</div>-->
                 
-          <form>
-            <div class="form-group">
+          <!--<form>
+            <div class="form-group form-background">
               <label for="formGroupfirstname" class="form-label">First name</label>
               <input
                 type="text"
@@ -132,7 +132,7 @@
                 placeholder="First name"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group form-background">
               <label for="formGroupsecondname" class="form-label">Last name</label>
               <input
                 type="text"
@@ -150,9 +150,59 @@
                 placeholder="Email"
               />
             </div>
+          </form>-->
+          
+        
+      <!--  <form class="signup-form" action="https://formdump.codeinstitute.net/" method="post">
+          <h2>Sign up for news & mixes<i class="fas fa-heartbeat"></i></h2>
+            <label for="fname">First Name</label>
+            <input class="text-input" id="fname" type="text" name="first_name" required="">
+            <label for="lname">Last Name</label>
+            <input class="text-input" id="lname" type="text" name="last_name" required="">
+            <label for="email">Email</label>
+            <input class="text-input" id="email" type="email" name="email_address" required="">
+            <input class="join-button" type="submit" value="Submit">
+      </form>-->
+     <form class="signup-form fixed-bottom" action="https://formdump.codeinstitute.net/" method="post">
+     <h4>Sign up for news & mixes<i class="fas fa-heartbeat"></i></h4>
+            <div class="form-group form-background">
+              <label for="fname" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control text-input"
+                id="fname"
+                placeholder="First name"
+		required=""
+              />
+            <!--</div>
+            <div class="form-group form-background">-->
+              <label for="lname" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control text-input"
+                id="lname"
+                placeholder="Last name"
+		required=""
+              />
+              <!--</div>
+                <div class="form-group">-->
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control text-input"
+                id="email"
+                placeholder="Email"
+		required=""
+              />
+		<!-- </div>
+		<div class="form-group">-->
+		<input class="join-button" type="submit" value="Submit">
+            </div>
           </form>
+      
+  
         </div>
-      </div>
+    
     </section>
     <section id="about">
       <!--section class="container-about"
