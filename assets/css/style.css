@@ -71,16 +71,15 @@
   background-size: cover;
 }*/
 
-.my-container{
-    border: 1px solid green
+.my-container {
+  border: 1px solid green;
 }
-.my-row{
-    border: 3px solid red
-
+.my-row {
+  border: 3px solid red;
 }
 
-.my-col{
-    border: 3px dotted blue
+.my-col {
+  border: 3px dotted blue;
 }
 
 .container-home {
@@ -101,22 +100,22 @@
     background-color: transparent;
 }*/
 
-.container-home .row{
-    display: block;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 75px;
+.container-home .row {
+  display: block;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 75px;
 }
 
 /*.col {
   max-width: 75%;
 }*/
 
-.form-group {
+/*.form-group {
   margin-bottom: 0;
   /* margin-right: 1rem;
-    background-color: #006dcc;*/
-}
+    background-color: #006dcc;
+}*/
 
 /*.form-label{
     color: white;
@@ -145,7 +144,7 @@
   bottom: 10%;*/
   color: #fff;
   background-color: rgba(60, 60, 60, 0.6);
-  /*max-width: 400px;
+  max-width: 400px;
   flex: 400px;
   min-width: 0;
   /*position: absolute; 
@@ -180,14 +179,6 @@
   background-color: #fafafa;
   color: #f16c6b;
 }
-
-
-/*.form-background{
-  padding: 30px 0;
-  background-color: #006dcc;
-}*/
-
-
 /*--------------------------------------------------------About--*/
 .container-about {
   height: 100vh;
@@ -205,12 +196,19 @@
 .container-about .row {
   margin-right: 5px;
   margin-left: 5px;
-  margin-bottom: 40%;
+  margin-bottom: 10%;
 }
 
 p {
   color: white;
-}*
+}
+
+/*.video {
+    width: 560px;
+    height: 315px;
+    margin-left: 50%;
+    margin-top: 20px;
+}*/
 
 /*--------------------------------------------------------Mixes--*/
 .container-mixes {
@@ -264,43 +262,173 @@ p {
 }*/
 
 /*----------------------------------------------------------------Media Queries*/
+
+
 @media (max-width: 576px) {
   .container-home .row {
     margin-right: auto;
     margin-left: auto;
-    /*display: none;*/
   }
 }
-@media (max-width: 400px) {
+
+/*Align About text to iPhone X; iPhone 6/7/8 Plus; Surface Duo; Pixel 2; Pixel 2 XL Portrait Viewport*/
+@media (max-width: 550px) and (max-height: 850px) {
+    .container-about .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 80%;
+}
+}
+
+/*Align navbar and About text to iPhone 5; iPhone 6/7/8; Galaxy Fold, Galaxy S5 Portrait & Moto G4 Portrait Viewport*/
+
+@media (max-width: 400px) and (max-height: 700px) {
   #logo-sub {
     font-size: 0.75rem;
-    /*display: none;*/
+
   }
-  /*#logo-sub{
-  display:none;
-  font-size:0.75rem;*/
+     .container-about .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 50%;
+}
 }
 
+/*Align signup-form; twitter feed & About text to iPhone 5/SE; Galaxy Fold Portrait Viewport*/
 @media (max-width: 320px) {
   #logo-sub {
-    font-size: 0.7rem;
+    display: none;
+  }
 }
-}
-  
+.container-home .row {
+    margin-top: 140px;
+  }
 
-/*@media (min-width: 992px){
-#logo {
-  font-size: 5rem;
-}
-}
-/*@media (min-width: 992px){
-.navbar-expand-lg {
-  background-color: red !important;
-}
-}*/
-
+/*Align signup-form; twitter feed & About text to iPhone 5/SE Portrait Viewport*/
 @media (max-height: 600px) {
   .container-home .row {
-    margin-top: 220px;
+    margin-top: 170px;
   }
+
+  .navbar {
+    padding: 0rem 1rem;
+  }
+
+  .twitter-timeline {
+    height: 250px !important;
+  }
+
+    .container-about .row {
+    margin-bottom: 50%;
+}
+}
+
+/*Align signup-form; twitter feed & About text to Surface Duo Landscape Viewport*/
+@media (max-width: 730px) and (max-height: 550px) {
+
+.container-home .row {
+    display: flex;
+}
+
+    .signup-form {
+margin-right: 10px;
+}
+
+.twitter-timeline{
+margin-top: 10px !important;
+height: 305px !important;
+}
+
+.container-about .row {
+    margin-bottom: 35%;
+}
+}
+
+/*Align signup-form; twitter feed & About text to iPhone X; iPhone 6/7/8 Plus; iPhone 6/7/8; Pixel 2 & Pixel 2 XL Landscape Viewport*/
+@media (max-height: 415px) {
+.container-home .row {
+    display: flex;
+    margin-top: 70px;
+}
+
+.signup-form{
+margin-right: 6px;
+}
+
+.twitter-timeline{
+margin-top: 10px !important;
+height: 310px !important;
+}
+
+  .container-about .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15%;
+}
+}
+
+/*Align signup-form; twitter feed & About text to iPhone 5/SE, Galaxy S5 & Moto G4 Landscape Viewport*/
+@media (max-height: 360px){
+ .container-home .row {
+    margin-top: 400px;
+    display: contents;
+  }
+
+
+ #logo-sub {
+    font-size: 0.75rem;
+ }
+
+ .signup-form {
+    padding: 10px 10px 10px 10px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: small;
+  }
+
+  form h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-input {
+    height: 20px;
+  }
+
+  .form-control {
+    font-size: 0.8rem;
+  }
+
+  .join-button {
+    margin-top: 10px;
+    font-size: 80%;
+    padding: 4px 10px 4px 10px;
+  }
+
+  .twitter-timeline{
+margin-top: 70px !important;
+width: 250px !important;
+height: 225px !important;
+}
+
+  .container-about .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10%;
+}
+}
+
+/*Align to Galaxy Fold Landscape viewport*/
+
+@media (max-height: 300px){
+    .container-about .row {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5%;
+}
 }
