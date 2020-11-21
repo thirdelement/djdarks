@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/0d3dc6dda0.js"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>DJ DRKS</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://kit.fontawesome.com/0d3dc6dda0.js" crossorigin="anonymous" />
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<title>DJ DRKS</title>
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg fixed-top navbar-light">
-		<div class="container-fluid">
-			<ul class="navbar-nav">
-				<li class="nav-item" id="logo-nav">
-					<a class="navbar-brand" href="index.html">
-						<h1 id="logo">DRKS</h1>
-					</a>
-					<h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>
-				</li>
-			</ul>
-			<button
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item" id="logo-nav">
+            <a class="navbar-brand" href="index.html">
+              <h1 id="logo">DRKS</h1>
+            </a>
+            <h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>
+          </li>
+        </ul>
+        <button
           class="navbar-toggler ml-auto custom-toggler"
           type="button"
           data-toggle="collapse"
@@ -36,139 +43,373 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-			<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="active nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-						<a class="nav-link" href="#mixes">Mixes</a>
-					</li>
-					<li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-						<a class="nav-link" href="#dates">Dates</a>
-					</li>
-					<li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-					<!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
-				</ul>
-			</div>
-		</div>
-		<!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
-	</nav>
-	<section id="home">
-		<div class="container-fluid container-home">
-			<div class="row">
-				<div class="col-xs-12">
-					<form class="signup-form" action="https://formdump.codeinstitute.net/" method="post">
-						<h4>Sign up for news & mixes</h4>
-						<label for="fname">First Name</label>
-						<input class="text-input form-control" id="fname" type="text" name="first_name" placeholder="First name" required>
-						<label for="lname">Last Name</label>
-						<input class="text-input form-control" id="lname" type="text" name="last_name" placeholder="Last name" required>
-						<label for="email">Email</label>
-						<input class="text-input form-control" id="email" type="email" name="email_address" placeholder="Email" required>
-						<input class="join-button" type="submit" value="Submit">
-      </form>
-				</div>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="active nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#mixes">Mixes</a>
+            </li>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#dates">Dates</a>
+            </li>
+            <li
+              class="nav-item mr-2"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
+          </ul>
+        </div>
+      </div>
+      <!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
+    </nav>
+    <section id="home">
+      <div class="container-fluid container-home">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-12">
+            <form
+              class="signup-form"
+              action="https://formdump.codeinstitute.net/"
+              method="post"
+            >
+              <h4>Sign up for news & mixes</h4>
+              <label for="fname">First Name</label>
+              <input
+                class="text-input form-control"
+                id="fname"
+                type="text"
+                name="first_name"
+                placeholder="First name"
+                required
+              />
+              <label for="lname">Last Name</label>
+              <input
+                class="text-input form-control"
+                id="lname"
+                type="text"
+                name="last_name"
+                placeholder="Last name"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                class="text-input form-control"
+                id="email"
+                type="email"
+                name="email_address"
+                placeholder="Email"
+                required
+              />
+              <input class="join-button" type="submit" value="Submit" />
+            </form>
+          </div>
 
-				<div class="col-xs-12">
-					<a class="twitter-timeline" data-lang="en" data-width="315" data-height="275" data-theme="dark"
-						href="https://twitter.com/Drum_nBass?ref_src=twsrc%5Etfw">Tweets by Drum_nBass</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="about">
-		<div class="container-fluid container-about">
-			<div class="row">
-            <div class="col-xs-12">
-				<p>
-					Born and raised in mid-70s south London, DRKS was hooked by the club
-					scene in 90s.
-				</p>
-				<p>
-					Inspired by his growing collection of reggae and hip hop vinyl, DRKS
-					picked up DJing skills from friends and family.
-				</p>
-				<p>
-					Since these early days he has delighted clubbers, house party goers
-					and home listeners alike with his well-constructed climatic sets.
-				</p>
-				<p>
-					DRKS' passion for drum 'n' bass and deep house will inspire and
-					entertain you whereever you are.
-				</p>
+          <div class="col-xs-12 col-sm-6 col-lg-12">
+            <a
+              class="twitter-timeline"
+              data-lang="en"
+              data-width="315"
+              data-height="275"
+              data-theme="dark"
+              href="https://twitter.com/Drum_nBass?ref_src=twsrc%5Etfw"
+              >Tweets by Drum_nBass</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container-fluid container-about">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-12" id="about-text">
+            <p class="first-paragraph">
+              Born and raised in mid-70s south London, DRKS was hooked by the
+              club scene in 90s.
+            </p>
+            <p>
+              Inspired by his growing collection of reggae and hip hop vinyl,
+              DRKS picked up DJing skills from friends and family.
+            </p>
+            <p>
+              Since these early days he has delighted clubbers, house party
+              goers and home listeners alike with his well-constructed climatic
+              sets.
+            </p>
+            <p class="last-paragraph">
+              DRKS' passion for drum 'n' bass and deep house will inspire and
+              entertain you whereever you are.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-12" id="col-video">
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/j8fu_TOKlg4" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>-->
+            <!--<iframe
+              class="video"
+              width="300"
+              height="300"
+              src="https://www.youtube.com/embed/j8fu_TOKlg4"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>-->
+            <iframe
+              class="video"
+              width="300"
+              height="300"
+              src="https://www.youtube-nocookie.com/embed/j8fu_TOKlg4?controls=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mixes">
+      <div class="container-fluid container-mixes">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-12">
+            
+              <iframe
+                class="music-set"
+                width="100%"
+                height="300"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+          
+              <iframe
+                width="100%"
+                height="300"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            
+            </div>
+            <!--<div
+        style="
+          font-size: 10px;
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+            Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+          font-weight: 100;
+        "
+      >
+        <a
+          href="https://soundcloud.com/dj-darks-stardomtv"
+          title="Dj Darks StardomTV"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >Dj Darks StardomTV</a
+        >
+        
+        <a
+          href="https://soundcloud.com/dj-darks-stardomtv/darks-presents-social-dis-dancing-mix"
+          title="Dark&#x27;s presents.  Social Dis-dancing mix"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >Dark&#x27;s presents. Social Dis-dancing mix</a
+        >
+      </div>-->
+          </div>
+        </div>
+    </section>
+    <section id="dates">
+      <div class="container-fluid container-dates">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-12">
+            <div
+              class="d-flex align-content-start flex-wrap bd-highlight dates-form"
+            >
+              <div class="p-2 flex-fill bd-highlight">Zoom</div>
+              <div class="p-2 flex-fill bd-highlight">22 Jan 2021</div>
+              <div class="p-2 flex-fill bd-highlight">9pm</div>
+              <div class="p-2 flex-fill bd-highlight">
+                <!--Modal booking button-->
+                <button
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#bookingenquiry"
+                >
+                  Book
+                </button>
+              </div>
+
+              <!--Code for Modal booking button: https://aleesang.github.io/milestone-project-one/index.html#videos-->
+              <div class="break"></div>
+              <!--Code for line break in flex box here: https://tobiasahlin.com/blog/flexbox-break-to-new-row/-->
+              <div class="p-2 flex-fill bd-highlight">Zoom</div>
+              <div class="p-2 flex-fill bd-highlight">19 Feb 2021</div>
+              <div class="p-2 flex-fill bd-highlight">9pm</div>
+              <div class="p-2 flex-fill bd-highlight">
+                <!--Modal booking button-->
+                <button
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#bookingenquiry"
+                >
+                  Book
+                </button>
+
+                <!--Modal booking form-->
+
+                <div
+                  class="modal fade"
+                  id="bookingenquiry"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                      <div class="modal-body">
+                        <div class="justify-content-center">
+                          <form class="booking-form" onsubmit="myFunction()">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="Name"
+                                required
+                              />
+                            </div>
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="emailx"
+                                placeholder="Email"
+                                required
+                              />
+                            </div>
+                            <div class="form-group">
+                              <textarea
+                                class="form-control"
+                                id="enquiry"
+                                rows="8"
+                                placeholder="Your Enquiry"
+                                required
+                              ></textarea>
+                            </div>
+                            <div class="form-group">
+                              <button class="btn btn-dark">Submit</button>
+                            </div>
+
+                            <!--Code for Modal booking form: https://aleesang.github.io/milestone-project-one/index.html#videos-->
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-xs-12">
-				<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/j8fu_TOKlg4" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>-->
-                    <!--<iframe class="video" width="300" height="300" src="https://www.youtube.com/embed/j8fu_TOKlg4" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>-->
-			</div>
-		</div>
-	</section>
-	<section id="mixes">
-		<div class="container-fluid container-mixes"></div>
-	</section>
-	<section id="dates">
-		<div class="container-fluid container-dates"></div>
-	</section>
-	<section id="contact">
-		<div class="container-fluid container-contact">
-			<form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
-				<h4>Send DRKS a message<i class="fas fa-heartbeat"></i></h4>
-				<div class="form-group form-background">
-					<label for="firstname" class="form-label">First name</label>
-					<input
+              </div>
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container-fluid container-contact">
+        <form
+          class="contact-form"
+          action="https://formdump.codeinstitute.net/"
+          method="post"
+        >
+          <h4>Send DRKS a message<i class="fas fa-heartbeat"></i></h4>
+          <div class="form-group form-background">
+            <label for="firstname" class="form-label">First name</label>
+            <input
               type="text"
               class="form-control text-input"
               id="firstname"
               placeholder="First name"
               required=""
             />
-					<label for="lastname" class="form-label">Last name</label>
-					<input
+            <label for="lastname" class="form-label">Last name</label>
+            <input
               type="text"
               class="form-control text-input"
               id="lastname"
               placeholder="Last name"
               required=""
             />
-					<label for="email1" class="form-label">Email</label>
-					<input
+            <label for="email1" class="form-label">Email</label>
+            <input
               type="email"
               class="form-control text-input"
               id="email1"
               placeholder="Email"
               required=""
             />
-					<label for="message" class="form-label">Email</label>
-					<input
+            <label for="message" class="form-label">Email</label>
+            <input
               type="text"
               class="form-control text-input"
               id="message"
               placeholder="Message"
               required=""
             />
-					<input class="join-button" type="submit" value="Submit" />
+            <input class="join-button" type="submit" value="Submit" />
           </div>
-			</form>
-		</div>
-	</section>
-	<footer></footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-	</script>
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</body>
-
+        </form>
+      </div>
+    </section>
+    <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </body>
 </html>

@@ -199,16 +199,28 @@
   margin-bottom: 10%;
 }
 
+/*#about-text {
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
 p {
   color: white;
 }
 
-/*.video {
-    width: 560px;
-    height: 315px;
-    margin-left: 50%;
-    margin-top: 20px;
+/*.last-paragraph {
+  margin-bottom: 0;
 }*/
+
+.video {
+  display: block;
+  width: 560px;
+  height: 315px;
+  /*margin-left: 50%;
+    margin-right: 50%;*/
+  margin-top: 20px;
+  border: none;
+}
 
 /*--------------------------------------------------------Mixes--*/
 .container-mixes {
@@ -224,6 +236,23 @@ p {
   position: relative;
 }
 
+.container-mixes .row {
+  display: block;
+}
+
+.music-set1 {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
 /*--------------------------------------------------------Dates--*/
 .container-dates {
   height: 100vh;
@@ -234,8 +263,42 @@ p {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   position: relative;
+}
+
+.container-dates .row {
+  display: block;
+}
+.dates-form {
+  /*position: sticky;
+  left: 80%;
+  top: 60%;
+  margin-top: 150px;
+  margin-left: 35rem;
+  margin-right: 2rem;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;*/
+  color: #fff;
+  background-color: rgba(120, 143, 18, 0.849);
+  /*max-width: 400px;*/
+  /*flex: 400px;*/
+  /*min-width: 700px;*/
+  /*position: absolute; 
+  left: 10%;*/
+  padding: 20px 20px 20px 20px;
+  margin-top: 70%;
+  margin-bottom: 10px;
+}
+
+.dates-font {
+    color:#cccccc
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 /*--------------------------------------------------------Contact--*/
@@ -263,35 +326,61 @@ p {
 
 /*----------------------------------------------------------------Media Queries*/
 
-
-@media (max-width: 576px) {
-  .container-home .row {
+/*Align sign-up form and Twitter feed vertically for iPad in Portrait Viewport*/
+@media (min-width: 576px) {
+.col-sm-6 {
+  max-width: none;
+}
+  /*.container-home .row {
     margin-right: auto;
     margin-left: auto;
-  }
+  }*/
 }
 
 /*Align About text to iPhone X; iPhone 6/7/8 Plus; Surface Duo; Pixel 2; Pixel 2 XL Portrait Viewport*/
-@media (max-width: 550px) and (max-height: 850px) {
-    .container-about .row {
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 80%;
-}
+@media (max-width: 540px) and (max-height: 850px) {
+  .container-home .row {
+    display: flex;
+    justify-content: center;
+  }
+  .container-about .row {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .video {
+    width: 305px;
+    height: 275px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
 }
 
-/*Align navbar and About text to iPhone 5; iPhone 6/7/8; Galaxy Fold, Galaxy S5 Portrait & Moto G4 Portrait Viewport*/
+/*Align navbar and About text to iPhone 5; iPhone 6/7/8; Galaxy Fold; Galaxy S5 Portrait & Moto G4 Portrait Viewport*/
 
 @media (max-width: 400px) and (max-height: 700px) {
   #logo-sub {
     font-size: 0.75rem;
-
   }
-     .container-about .row {
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 50%;
-}
+
+  .container-about .row {
+    margin-bottom: 0;
+  }
+
+  .video {
+    width: 305px;
+    height: 275px;
+    margin-top: 10px;
+    margin: auto;
+  }
 }
 
 /*Align signup-form; twitter feed & About text to iPhone 5/SE; Galaxy Fold Portrait Viewport*/
@@ -299,10 +388,11 @@ p {
   #logo-sub {
     display: none;
   }
-}
-.container-home .row {
+
+  .container-home .row {
     margin-top: 140px;
   }
+}
 
 /*Align signup-form; twitter feed & About text to iPhone 5/SE Portrait Viewport*/
 @media (max-height: 600px) {
@@ -318,68 +408,97 @@ p {
     height: 250px !important;
   }
 
-    .container-about .row {
+  .container-about .row {
     margin-bottom: 50%;
-}
+  }
 }
 
 /*Align signup-form; twitter feed & About text to Surface Duo Landscape Viewport*/
-@media (max-width: 730px) and (max-height: 550px) {
 
-.container-home .row {
+@media (max-width: 720px) and (max-height: 540px) {
+  .container-home {
+    justify-content: center;
+  }
+
+  .container-home .row {
     display: flex;
-}
+  }
 
-    .signup-form {
-margin-right: 10px;
-}
+  .signup-form {
+    margin-right: 10px;
+  }
 
-.twitter-timeline{
-margin-top: 10px !important;
-height: 305px !important;
-}
+  .twitter-timeline {
+    margin-top: 10px !important;
+    height: 305px !important;
+  }
 
-.container-about .row {
-    margin-bottom: 35%;
-}
+  .container-about .row {
+    margin-bottom: 15%;
+  }
+
+  .video {
+      width: 315px;
+      height: 275px;
+  }
 }
 
 /*Align signup-form; twitter feed & About text to iPhone X; iPhone 6/7/8 Plus; iPhone 6/7/8; Pixel 2 & Pixel 2 XL Landscape Viewport*/
 @media (max-height: 415px) {
-.container-home .row {
+  .container-home {
+    justify-content: center;
+  }
+
+  .container-home .row {
     display: flex;
     margin-top: 70px;
-}
+  }
 
-.signup-form{
-margin-right: 6px;
-}
+  .signup-form {
+    margin-right: 6px;
+  }
 
-.twitter-timeline{
-margin-top: 10px !important;
-height: 310px !important;
-}
+  .twitter-timeline {
+    margin-top: 10px !important;
+    height: 305px !important;
+  }
 
   .container-about .row {
-    margin-right: 5px;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #col-video {
+    margin-top: 0;
+  }
+  .video {
+    width: 295px;
+    height: 225px;
     margin-left: 5px;
-    margin-bottom: 15%;
+    margin-top: 5px;
+  }
+
+  .container-mixes .row {
+    display: flex;
 }
 }
 
 /*Align signup-form; twitter feed & About text to iPhone 5/SE, Galaxy S5 & Moto G4 Landscape Viewport*/
-@media (max-height: 360px){
- .container-home .row {
+@media (max-height: 360px) {
+  .container-home .row {
     margin-top: 400px;
     display: contents;
   }
 
-
- #logo-sub {
+  #logo-sub {
     font-size: 0.75rem;
- }
+  }
 
- .signup-form {
+  .signup-form {
     padding: 10px 10px 10px 10px;
     margin-top: 70px;
     margin-bottom: 5px;
@@ -410,25 +529,41 @@ height: 310px !important;
     padding: 4px 10px 4px 10px;
   }
 
-  .twitter-timeline{
-margin-top: 70px !important;
-width: 250px !important;
-height: 225px !important;
-}
+  .twitter-timeline {
+    margin-top: 70px !important;
+    width: 250px !important;
+    height: 225px !important;
+  }
 
   .container-about .row {
     margin-right: 5px;
     margin-left: 5px;
-    margin-bottom: 10%;
-}
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .video {
+    width: 275px;
+    height: 300px;
+  }
 }
 
 /*Align to Galaxy Fold Landscape viewport*/
 
-@media (max-height: 300px){
-    .container-about .row {
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5%;
-}
+@media (max-height: 300px) {
+  .container-about .row {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .first-paragraph {
+    margin-top: 20 px;
+  }
+  .video {
+    height: 275px;
+  }
 }
