@@ -62,6 +62,23 @@
 /*body{
     margin: 30px;
 }
+
+/*-------------------------------------------General----------*/
+/*h2 {
+    color: whitesmoke;
+}*/
+
+.page-heading {
+  /*float: left;
+   margin-top: 0.5rem;
+   margin-left: 30px; 
+   margin-right: 20px;*/
+  font-family: "Audiowide";
+  color: whitesmoke;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+
 /*--------------------------------------------------------Home--*/
 /*.container-home {
   background: url("eclipse.jpg") no-repeat center center;
@@ -83,17 +100,18 @@
 }
 
 .container-home {
-  height: 100vh;
   background: url("../images/eclipse.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
   display: flex;
   align-items: center;
   /*justify-content: center;*/
-  justify-content: flex-end;
-  position: relative;
+  /*justify-content: flex-end;
+  position: relative;*/
 }
 
 /*.jumbotron {
@@ -144,7 +162,7 @@
   bottom: 10%;*/
   color: #fff;
   background-color: rgba(60, 60, 60, 0.6);
-  max-width: 400px;
+  max-width: 316px;
   flex: 400px;
   min-width: 0;
   /*position: absolute; 
@@ -181,22 +199,24 @@
 }
 /*--------------------------------------------------------About--*/
 .container-about {
-  height: 100vh;
   background: url("../images/croydon.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative;*/
 }
 
 .container-about .row {
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 10%;
+  /*margin-top: 10%;*/
 }
 
 /*#about-text {
@@ -213,27 +233,33 @@ p {
 }*/
 
 .video {
-  display: block;
-  width: 560px;
-  height: 315px;
+  /*display: block;*/
+  /*width: 560px;
+  height: 315px;*/
   /*margin-left: 50%;
     margin-right: 50%;*/
+  /*position: absolute;*/
+  width: 100%;
+  height: 100%;
   margin-top: 20px;
   border: none;
 }
 
 /*--------------------------------------------------------Mixes--*/
 .container-mixes {
-  height: 100vh;
+  
   background: url(../images/london-outside-people.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 95px 40px 95px 40px;*/
 }
 
 .container-mixes .row {
@@ -251,20 +277,24 @@ p {
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
     Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
     font-weight: 100;
+    width: 100%;
+    height: 100%;
 }
 
 /*--------------------------------------------------------Dates--*/
 .container-dates {
-  height: 100vh;
+  
   background: url(../images/djdecks.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
-  position: relative;
+  /*justify-content: center;
+  position: relative;*/
 }
 
 .container-dates .row {
@@ -290,7 +320,13 @@ p {
   padding: 20px 20px 20px 20px;
   margin-top: 70%;
   margin-bottom: 10px;
+  display: inline-flex!important;
 }
+
+/*-------------Reduce table width----------------*/
+/*.container-dates .row .d-flex .col-xs-6 {
+    display: inline-flex!important;
+}*/
 
 .dates-font {
     color:#cccccc
@@ -303,16 +339,18 @@ p {
 
 /*--------------------------------------------------------Contact--*/
 .container-contact {
-  height: 100vh;
+  
   background: url(../images/streetlights.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative;*/
 }
 
 /*.img-croydon {
@@ -324,246 +362,4 @@ p {
   width: 100%;
 }*/
 
-/*----------------------------------------------------------------Media Queries*/
 
-/*Align sign-up form and Twitter feed vertically for iPad in Portrait Viewport*/
-@media (min-width: 576px) {
-.col-sm-6 {
-  max-width: none;
-}
-  /*.container-home .row {
-    margin-right: auto;
-    margin-left: auto;
-  }*/
-}
-
-/*Align About text to iPhone X; iPhone 6/7/8 Plus; Surface Duo; Pixel 2; Pixel 2 XL Portrait Viewport*/
-@media (max-width: 540px) and (max-height: 850px) {
-  .container-home .row {
-    display: flex;
-    justify-content: center;
-  }
-  .container-about .row {
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-  }
-
-  .video {
-    width: 305px;
-    height: 275px;
-    margin-top: 10px;
-    margin: auto;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-/*Align navbar and About text to iPhone 5; iPhone 6/7/8; Galaxy Fold; Galaxy S5 Portrait & Moto G4 Portrait Viewport*/
-
-@media (max-width: 400px) and (max-height: 700px) {
-  #logo-sub {
-    font-size: 0.75rem;
-  }
-
-  .container-about .row {
-    margin-bottom: 0;
-  }
-
-  .video {
-    width: 305px;
-    height: 275px;
-    margin-top: 10px;
-    margin: auto;
-  }
-}
-
-/*Align signup-form; twitter feed & About text to iPhone 5/SE; Galaxy Fold Portrait Viewport*/
-@media (max-width: 320px) {
-  #logo-sub {
-    display: none;
-  }
-
-  .container-home .row {
-    margin-top: 140px;
-  }
-}
-
-/*Align signup-form; twitter feed & About text to iPhone 5/SE Portrait Viewport*/
-@media (max-height: 600px) {
-  .container-home .row {
-    margin-top: 170px;
-  }
-
-  .navbar {
-    padding: 0rem 1rem;
-  }
-
-  .twitter-timeline {
-    height: 250px !important;
-  }
-
-  .container-about .row {
-    margin-bottom: 50%;
-  }
-}
-
-/*Align signup-form; twitter feed & About text to Surface Duo Landscape Viewport*/
-
-@media (max-width: 720px) and (max-height: 540px) {
-  .container-home {
-    justify-content: center;
-  }
-
-  .container-home .row {
-    display: flex;
-  }
-
-  .signup-form {
-    margin-right: 10px;
-  }
-
-  .twitter-timeline {
-    margin-top: 10px !important;
-    height: 305px !important;
-  }
-
-  .container-about .row {
-    margin-bottom: 15%;
-  }
-
-  .video {
-      width: 315px;
-      height: 275px;
-  }
-}
-
-/*Align signup-form; twitter feed & About text to iPhone X; iPhone 6/7/8 Plus; iPhone 6/7/8; Pixel 2 & Pixel 2 XL Landscape Viewport*/
-@media (max-height: 415px) {
-  .container-home {
-    justify-content: center;
-  }
-
-  .container-home .row {
-    display: flex;
-    margin-top: 70px;
-  }
-
-  .signup-form {
-    margin-right: 6px;
-  }
-
-  .twitter-timeline {
-    margin-top: 10px !important;
-    height: 305px !important;
-  }
-
-  .container-about .row {
-    margin-bottom: 0;
-    flex-wrap: nowrap;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  #col-video {
-    margin-top: 0;
-  }
-  .video {
-    width: 295px;
-    height: 225px;
-    margin-left: 5px;
-    margin-top: 5px;
-  }
-
-  .container-mixes .row {
-    display: flex;
-}
-}
-
-/*Align signup-form; twitter feed & About text to iPhone 5/SE, Galaxy S5 & Moto G4 Landscape Viewport*/
-@media (max-height: 360px) {
-  .container-home .row {
-    margin-top: 400px;
-    display: contents;
-  }
-
-  #logo-sub {
-    font-size: 0.75rem;
-  }
-
-  .signup-form {
-    padding: 10px 10px 10px 10px;
-    margin-top: 70px;
-    margin-bottom: 5px;
-  }
-
-  label {
-    display: inline-block;
-    margin-bottom: 0;
-    font-size: small;
-  }
-
-  form h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .text-input {
-    height: 20px;
-  }
-
-  .form-control {
-    font-size: 0.8rem;
-  }
-
-  .join-button {
-    margin-top: 10px;
-    font-size: 80%;
-    padding: 4px 10px 4px 10px;
-  }
-
-  .twitter-timeline {
-    margin-top: 70px !important;
-    width: 250px !important;
-    height: 225px !important;
-  }
-
-  .container-about .row {
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 3px;
-    margin-bottom: 0;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
-
-  .video {
-    width: 275px;
-    height: 300px;
-  }
-}
-
-/*Align to Galaxy Fold Landscape viewport*/
-
-@media (max-height: 300px) {
-  .container-about .row {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-
-  .first-paragraph {
-    margin-top: 20 px;
-  }
-  .video {
-    height: 275px;
-  }
-}
