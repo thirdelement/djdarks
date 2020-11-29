@@ -144,13 +144,14 @@
     </section>
     <section id="about">
       <div class="container-fluid container-about">
+       <h2 class="page-heading">
+              <i class="far fa-address-card"></i> About
+            </h2>
         <!-- Row 1 -->
         <div class="row">
           <!-- Column 1 -->
-          <div class="col-xs-12">
-            <h2 class="page-heading">
-              <i class="far fa-address-card"></i> About
-            </h2>
+          <div class="col-xs-12 col-sm-6">
+           
             <p class="first-paragraph">
               Born and raised in mid-70s south London, DRKS was hooked by the
               club scene in 90s.
@@ -169,9 +170,10 @@
               entertain you whereever you are.
             </p>
           </div>
-
+        <!--</div>-->
+        <!--<div class="row">-->
           <!-- Column 2 -->
-          <div class="col-xs-12">
+          <div class="col-xs-12 col-sm-6">
             <!-- <iframe
               class="video"
               width="560"
@@ -182,36 +184,38 @@
               allowfullscreen
             ></iframe>-->
             <!--Zoom effect - Code from: https://mdbootstrap.com/docs/jquery/css/hover-effects/-->
-            <div class="view overlay zoom">
+            <div class="view zoom portrait">
               <img
                 src="assets/images/about-pic-small.jpg"
-                class="hoverable"
+                class="img-fluid shadow rounded float-right"
                 alt="DJ DRKS portrait pic"
               />
             </div>
           </div>
-        </div>
+        <!--</div>-->
+      </div>
       </div>
     </section>
     <section id="mixes">
       <div class="container-fluid container-mixes">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-12">
+          <h2 class="page-heading"><i class="fas fa-headphones"></i> Mixes</h2>
+          <div class="col-xs-12 col-sm-6">
             <iframe
               class="music-set"
-              width="300"
-              height="200"
+              width="960"
+              height="400"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             ></iframe>
           </div>
-          <div class="col-xs-12 col-sm-6 col-lg-12">
+          <div class="col-xs-12 col-sm-6">
             <iframe
-              class="music-set"
-              width="300"
-              height="200"
+              class="music-set1"
+              width="960"
+              height="400"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
@@ -253,190 +257,58 @@
     </section>
     <section id="dates">
       <div class="container-fluid container-dates">
+        <h2 class="page-heading"><i class="far fa-calendar-alt"></i> Dates</h2>
         <div class="row">
-          <div class="col-xs-6">
-            <div
-              class="d-flex align-content-start flex-wrap bd-highlight dates-form"
-            >
-              <div class="p-2 flex-fill bd-highlight">Zoom</div>
-              <div class="p-2 flex-fill bd-highlight">22 Jan 2021</div>
-              <div class="p-2 flex-fill bd-highlight">9pm</div>
-              <div class="p-2 flex-fill bd-highlight">
-                <!--Modal booking button-->
-                <button
-                  class="btn btn-dark"
-                  data-toggle="modal"
-                  data-target="#bookingenquiry"
-                >
-                  Book
-                </button>
-              </div>
-              <!--<button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                  data-whatever="22 Jan 20"
-                >
-                  Book
-                </button>-->
-
-              <!--Code for Modal booking button: https://aleesang.github.io/milestone-project-one/index.html#videos-->
-              <div class="break"></div>
-              <!--Code for line break in flex box here: https://tobiasahlin.com/blog/flexbox-break-to-new-row/-->
-              <div class="p-2 flex-fill bd-highlight">Zoom</div>
-              <div class="p-2 flex-fill bd-highlight">19 Feb 2021</div>
-              <div class="p-2 flex-fill bd-highlight">9pm</div>
-              <div class="p-2 flex-fill bd-highlight">
-                <!--Modal booking button-->
-                <button
-                  class="btn btn-dark"
-                  data-toggle="modal"
-                  data-target="#bookingenquiry"
-                >
-                  Book
-                </button>
-
-                <!-- <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                  data-whatever="19 Feb 20"
-                >
-                  Book
-                </button>-->
-              </div>
-
-              <!--Modal booking form-->
-              <!--<div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        Request invite for:
-                      </h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-group">
-                          <label for="recipient-name" class="col-form-label"
-                            >Name:</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="recipient-name"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="recipient-name" class="col-form-label"
-                            >Email:</label
-                          >
-                          <input type="email" class="form-control" id="emailx" />
-                        </div>
-                        <div class="form-group">
-                          <label for="message-text" class="col-form-label"
-                            >Email:</label
-                          >
-                          <textarea
-                            class="form-control"
-                            id="message-text"
-                          ></textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
-
-              <div
-                class="modal fade"
-                id="bookingenquiry"
-                tabindex="-1"
-                role="dialog"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-body">
-                      <!--<div class="justify-content-center">-->
-                      <form class="booking-form" onsubmit="myFunction()">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Name"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="emailx"
-                            placeholder="Email"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <textarea
-                            class="form-control"
-                            id="enquiry"
-                            rows="8"
-                            placeholder="Your Enquiry"
-                            required
-                          ></textarea>
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-dark">Submit</button>
-                        </div>
-
-                        <!--Code for Modal booking form: https://aleesang.github.io/milestone-project-one/index.html#videos-->
-                      </form>
-                      <!--</div>-->
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col-xs-12">
+            <div class="view zoom portrait">
+              <img
+                src="assets/images/dates-pic-small.jpg"
+                class="img-fluid shadow rounded zoom"
+                alt="DJ DRKS portrait pic"
+              />
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+          <table class="table table-hover table-dark dates-table">
+  <!--<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>-->
+  <tbody>
+    <tr>
+      <!--<th scope="row">1</th>-->
+      <td>Zoom</td>
+      <td>22 Jan 2021</td>
+      <td>9pm</td>
+      <td>Book</td>
+    </tr>
+    <tr>
+      <!--<th scope="row">2</th>-->
+       <td>Zoom</td>
+      <td>19 Feb 2021</td>
+      <td>9pm</td>
+      <td>Book</td>
+    </tr>
+  </tbody>
+</table>
+
+            
           </div>
         </div>
       </div>
     </section>
     <section id="contact">
       <div class="container-fluid container-contact">
-        <form
+        <h2 class="page-heading"><i class="far fa-envelope"></i> Contact</h2>
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- <form
           class="contact-form"
           action="https://formdump.codeinstitute.net/"
           method="post"
@@ -477,7 +349,54 @@
             />
             <input class="join-button" type="submit" value="Submit" />
           </div>
-        </form>
+        </form>-->
+            <form
+              class="contact-form"
+              action="https://formdump.codeinstitute.net/"
+              method="post"
+            >
+              <h4>Send DRKS a message</h4>
+              <label for="fname">First Name</label>
+              <input
+                class="text-input form-control"
+                id="fname1"
+                type="text"
+                name="first_name"
+                placeholder="First name"
+                required
+              />
+              <label for="lname">Last Name</label>
+              <input
+                class="text-input form-control"
+                id="lname1"
+                type="text"
+                name="last_name"
+                placeholder="Last name"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                class="text-input form-control"
+                id="email1"
+                type="email"
+                name="email_address"
+                placeholder="Email"
+                required
+              />
+              <label for="message">Message</label>
+              <textarea
+                class="text-input form-control"
+                id="message"
+                rows="5"
+                type="text"
+                name="message"
+                placeholder="Type message"
+                required
+              ></textarea>
+              <input class="join-button" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <footer></footer>

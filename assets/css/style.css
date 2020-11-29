@@ -197,6 +197,10 @@
   background-color: #fafafa;
   color: #f16c6b;
 }
+
+.twitter-timeline {
+    min-width: 0px!important;
+}
 /*--------------------------------------------------------About--*/
 .container-about {
   background: url("../images/croydon.jpg") no-repeat center center;
@@ -215,8 +219,8 @@
 .container-about .row {
   margin-right: 5px;
   margin-left: 5px;
-  margin-bottom: 10%;
-  /*margin-top: 10%;*/
+  /*Display setting below to enable DJ DRKS portrait to enable index.html 'float-right' setting*/
+  /*display: grid;*/
 }
 
 /*#about-text {
@@ -231,6 +235,12 @@ p {
 /*.last-paragraph {
   margin-bottom: 0;
 }*/
+
+.portrait {
+    margin-top: 20px;
+    /*min-width: 250px;*/
+    min-height: 350px;
+}
 
 .video {
   /*display: block;*/
@@ -266,6 +276,21 @@ p {
   display: block;
 }
 
+.music-set {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+    width: 100%;
+    height: 100%;
+}
+
 .music-set1 {
     font-size: 10px;
     color: #cccccc;
@@ -279,6 +304,7 @@ p {
     font-weight: 100;
     width: 100%;
     height: 100%;
+    margin-top: 20px;
 }
 
 /*--------------------------------------------------------Dates--*/
@@ -298,8 +324,9 @@ p {
 }
 
 .container-dates .row {
-  display: block;
+  justify-content: center;
 }
+
 .dates-form {
   /*position: sticky;
   left: 80%;
@@ -318,9 +345,16 @@ p {
   /*position: absolute; 
   left: 10%;*/
   padding: 20px 20px 20px 20px;
-  margin-top: 70%;
+  margin-top: 20px;
   margin-bottom: 10px;
   display: inline-flex!important;
+}
+
+.dates-table {
+    /*display: flex;*/
+    margin-top: 20px;
+    /*max-width: 500px;*/
+
 }
 
 /*-------------Reduce table width----------------*/
@@ -335,6 +369,11 @@ p {
 .break {
   flex-basis: 100%;
   height: 0;
+}
+
+/*Ensure dates-table stays aligned to center*/
+.container-dates .row .col-sm-4 {
+    max-width: none;
 }
 
 /*--------------------------------------------------------Contact--*/
@@ -362,4 +401,41 @@ p {
   width: 100%;
 }*/
 
+.container-contact .row {
+  justify-content: center;
+}
 
+.contact-form {
+  /*position: sticky;
+  left: 80%;
+  top: 60%;
+  margin-top: 150px;
+  margin-left: 35rem;
+  margin-right: 2rem;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;*/
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+  max-width: 400px;
+  flex: 400px;
+  min-width: 0;
+  /*position: absolute; 
+  left: 10%;*/
+  padding: 20px 20px 20px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-contact .row .form-control {
+  display: inline;
+  /*border: none;*/
+}
+
+/*---------------------Media queries-------*/
+/*Ensure dates-table does not display less than 450px for tablet and above*/
+@media (min-width: 576px){
+.dates-table {
+    min-width: 425px;
+}
+}
