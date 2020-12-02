@@ -144,14 +144,11 @@
     </section>
     <section id="about">
       <div class="container-fluid container-about">
-       <h2 class="page-heading">
-              <i class="far fa-address-card"></i> About
-            </h2>
+        <h2 class="page-heading"><i class="far fa-address-card"></i> About</h2>
         <!-- Row 1 -->
         <div class="row">
           <!-- Column 1 -->
           <div class="col-xs-12 col-sm-6">
-           
             <p class="first-paragraph">
               Born and raised in mid-70s south London, DRKS was hooked by the
               club scene in 90s.
@@ -170,8 +167,8 @@
               entertain you whereever you are.
             </p>
           </div>
-        <!--</div>-->
-        <!--<div class="row">-->
+          <!--</div>-->
+          <!--<div class="row">-->
           <!-- Column 2 -->
           <div class="col-xs-12 col-sm-6">
             <!-- <iframe
@@ -192,14 +189,14 @@
               />
             </div>
           </div>
-        <!--</div>-->
-      </div>
+          <!--</div>-->
+        </div>
       </div>
     </section>
     <section id="mixes">
       <div class="container-fluid container-mixes">
+        <h2 class="page-heading"><i class="fas fa-headphones"></i> Mixes</h2>
         <div class="row">
-          <h2 class="page-heading"><i class="fas fa-headphones"></i> Mixes</h2>
           <div class="col-xs-12 col-sm-6">
             <iframe
               class="music-set"
@@ -208,9 +205,11 @@
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             ></iframe>
           </div>
+        </div>
+        <div class="row">
           <div class="col-xs-12 col-sm-6">
             <iframe
               class="music-set1"
@@ -219,7 +218,7 @@
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             ></iframe>
           </div>
           <!--<div
@@ -271,8 +270,8 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
-          <table class="table table-hover table-dark dates-table">
-  <!--<thead>
+            <table class="table table-hover table-dark dates-table">
+              <!--<thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">First</th>
@@ -280,25 +279,133 @@
       <th scope="col">Handle</th>
     </tr>
   </thead>-->
-  <tbody>
-    <tr>
-      <!--<th scope="row">1</th>-->
-      <td>Zoom</td>
-      <td>22 Jan 2021</td>
-      <td>9pm</td>
-      <td>Book</td>
-    </tr>
-    <tr>
-      <!--<th scope="row">2</th>-->
-       <td>Zoom</td>
-      <td>19 Feb 2021</td>
-      <td>9pm</td>
-      <td>Book</td>
-    </tr>
-  </tbody>
-</table>
-
-            
+              <tbody>
+                <tr>
+                  <!--<th scope="row">1</th>-->
+                  <td>Zoom</td>
+                  <td>22 Jan 2021</td>
+                  <td>9pm</td>
+                  <td>
+                    <!--Modal button-->
+                    <button
+                      type="button"
+                      class="btn btn-warning"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      data-whatever="Zoom 22 Jan 2021"
+                    >
+                      Book
+                    </button>
+                    <!--Modal button end-->
+                  </td>
+                </tr>
+                <tr>
+                  <!--<th scope="row">2</th>-->
+                  <td>Zoom</td>
+                  <td>19 Feb 2021</td>
+                  <td>9pm</td>
+                  <td>
+                    <!--Modal button-->
+                    <button
+                      type="button"
+                      class="btn btn-warning"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      data-whatever="Zoom 19 Feb 2021"
+                    >
+                      Book
+                    </button>
+                    <!--Modal button end-->
+                  </td>
+                </tr>
+                <!--Modal form--Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content bg-secondary">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <!--<div class="form-group">
+           <label for="recipient-name" class="col-form-label">Date:</label>
+            <input type="date" class="form-control" id="recipient-name">
+          </div>
+           <div class="form-group">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="mail" placeholder="email@you.com">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Name:</label>
+            <textarea class="form-control" id="message-text" placeholder="name"></textarea>
+          </div>-->
+                          <!--<label for="fname">First Name:</label>-->
+                          <div class="row">
+                            <div class="col">
+                              <input
+                                class="text-input form-control"
+                                id="fname1"
+                                type="text"
+                                name="first_name"
+                                placeholder="First name"
+                                required
+                              />
+                            </div>
+                            <div class="col">
+                              <input
+                                class="text-input form-control"
+                                id="lname2"
+                                type="text"
+                                name="first_name"
+                                placeholder="First name"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <!--<label>Email:</label
+                            >--><input
+                            class="text-input form-control form-format"
+                            id="email-address"
+                            placeholder="Email address"
+                            type="text"
+                            required
+                          />
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-dark"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-warning" onclick="myFunction()">
+                          Book
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Modal form end-->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -356,16 +463,16 @@
               method="post"
             >
               <h4>Send DRKS a message</h4>
-              <label for="fname">First Name</label>
+              <label for="fname2">First Name</label>
               <input
                 class="text-input form-control"
-                id="fname1"
+                id="fname2"
                 type="text"
                 name="first_name"
                 placeholder="First name"
                 required
               />
-              <label for="lname">Last Name</label>
+              <label for="lname1">Last Name</label>
               <input
                 class="text-input form-control"
                 id="lname1"
@@ -374,7 +481,7 @@
                 placeholder="Last name"
                 required
               />
-              <label for="email">Email</label>
+              <label for="email1">Email</label>
               <input
                 class="text-input form-control"
                 id="email1"
@@ -419,5 +526,26 @@
       src="https://kit.fontawesome.com/0d3dc6dda0.js"
       crossorigin="anonymous"
     ></script>
+
+    <!--Java script for modal-->
+    <script>
+      $("#exampleModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var recipient = button.data("whatever"); // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this);
+        modal.find(".modal-title").text("Booking for " + recipient);
+      });
+    </script>
+    <!--end Java script-->
+
+    <!--Code for submit confirmation for forms: https://www.w3schools.com/js/js_popup.asp -->
+    <script>
+function myFunction() {
+  alert("Thanks for your booking.");
+}
+</script>
+    <!--End submit form code-->
   </body>
 </html>

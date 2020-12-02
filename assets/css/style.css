@@ -273,7 +273,8 @@ p {
 }
 
 .container-mixes .row {
-  display: block;
+    /*display: flex;*/
+    justify-content: center;
 }
 
 .music-set {
@@ -355,6 +356,23 @@ p {
     margin-top: 20px;
     /*max-width: 500px;*/
 
+}
+
+/*Add margin-top to Email address element in modal form*/
+.form-format {
+    margin-top: 20px;
+} 
+
+/*Add white background color for placeholder in modal form*/
+.container-dates .text-input {
+  background: transparent;
+  color: black;
+  /*width: 100%;*/
+  height: 25px;
+  background-color: #cccccc;
+  /*margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;*/
 }
 
 /*-------------Reduce table width----------------*/
