@@ -375,6 +375,14 @@ p {
   border-radius: 2px;*/
 }
 
+.close {
+    float: right;
+    font-size: none!important;
+    font-weight: none!important;
+    text-shadow: none!important;
+    opacity: none!important;
+}
+
 /*-------------Reduce table width----------------*/
 /*.container-dates .row .d-flex .col-xs-6 {
     display: inline-flex!important;
@@ -390,9 +398,10 @@ p {
 }
 
 /*Ensure dates-table stays aligned to center*/
-.container-dates .row .col-sm-4 {
+/*.container-dates .row .col-sm-4 {
     max-width: none;
-}
+    width: none!important;
+}*/
 
 /*--------------------------------------------------------Contact--*/
 .container-contact {
