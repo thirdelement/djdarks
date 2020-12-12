@@ -1,88 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>DJ DRKS</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item" id="logo-nav">
-            <a class="navbar-brand" href="index.html">
-              <h1 id="logo">DRKS</h1>
-            </a>
-            <h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>
-          </li>
-        </ul>
-        <button
-          class="navbar-toggler ml-auto custom-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <!--Code for custom-toggler here: https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color -->
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item" id="logo-nav">
+                    <a class="navbar-brand" href="index.html">
+                        <h1 class="font-audiowide">DRKS</h1>
+                    </a>
+                    <!--<h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>-->
+                </li>
+            </ul>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <!--Code for custom-toggler here: https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-          <ul class="navbar-nav ml-auto">
-            <li
-              class="active nav-item mr-2"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li
-              class="nav-item mr-2"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li
-              class="nav-item mr-2"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              <a class="nav-link" href="#mixes">Mixes</a>
-            </li>
-            <li
-              class="nav-item mr-2"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              <a class="nav-link" href="#dates">Dates</a>
-            </li>
-            <li
-              class="nav-item mr-2"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#mixes">Mixes</a>
+                    </li>
+                    <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#dates">Dates</a>
+                    </li>
+                    <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
+                </ul>
+            </div>
         </div>
-      </div>
-      <!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
+        <!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
     </nav>
-    <section id="home">
+    <section id="prehome">
+        <div class="container-fluid container-prehome">
+            <!--call out-->
+
+            <div class="row toprow-home">
+                <div class="col-sm-12 callout jumbotron text-center">
+                    <!--<section class="callout jumbotron text-center">-->
+                    <h1 class="jumbotron-header font-audiowide">DRKS</h1>
+                    <!--<section class="callout text-center my-auto">
+             <h1 class="font-audiowide">DRKS</h1>-->
+                    <h3 class="lead">
+                        Drum 'n' Bass & House DJ
+                    </h3>
+                </div>
+            </div>
+           <div class="row">
+                <!--<div class="col-md-1"></div>-->
+                <div class="col-sm-12 col-md-6 signup">
+                    <form class="signup-form ml-auto" action="https://formdump.codeinstitute.net/" method="post">
+                        <h4>Sign up for news & mixes</h4>
+                        <label for="fname">First Name</label>
+                        <input class="text-input form-control" id="fname" type="text" name="first_name"
+                            placeholder="First name" required />
+                        <label for="lname">Last Name</label>
+                        <input class="text-input form-control" id="lname" type="text" name="last_name"
+                            placeholder="Last name" required />
+                        <label for="email">Email</label>
+                        <input class="text-input form-control" id="email" type="email" name="email_address"
+                            placeholder="Email" required />
+                        <input class="join-button" type="submit" value="Submit" />
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 justify-content-center align-self-center">
+                    <a class="twitter-timeline" data-lang="en" data-width="315" data-height="310" data-theme="dark"
+                        href="https://twitter.com/Drum_nBass?ref_src=twsrc%5Etfw">Tweets by Drum_nBass</a>
+                </div>
+               <!--<div class="col-md-1">
+                </div>--> 
+            </div>
+        </div>
+       
+    </section>
+    <!--<section id="home">
       <div class="container-fluid container-home">
         <div class="row">
           <div class="col-xs-12">
@@ -95,7 +108,7 @@
               <label for="fname">First Name</label>
               <input
                 class="text-input form-control"
-                id="fname"
+                id="fname3"
                 type="text"
                 name="first_name"
                 placeholder="First name"
@@ -104,7 +117,7 @@
               <label for="lname">Last Name</label>
               <input
                 class="text-input form-control"
-                id="lname"
+                id="lname3"
                 type="text"
                 name="last_name"
                 placeholder="Last name"
@@ -113,7 +126,7 @@
               <label for="email">Email</label>
               <input
                 class="text-input form-control"
-                id="email"
+                id="email3"
                 type="email"
                 name="email_address"
                 placeholder="Email"
@@ -136,200 +149,143 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <section id="about">
-      <div class="container-fluid container-about">
-        <h2 class="page-heading"><i class="far fa-address-card"></i> About</h2>
-        <!-- Row 1 -->
-        <div class="row">
-          <!-- Column 1 -->
-          <div class="col-xs-12 col-sm-6">
-            <p class="first-paragraph">
-              Born and raised in mid-70s south London, DRKS was hooked by the
-              club scene in 90s.
-            </p>
-            <p>
-              Inspired by his growing collection of reggae and hip hop vinyl,
-              DRKS picked up DJing skills from friends and family.
-            </p>
-            <p>
-              Since these early days he has delighted clubbers, house party
-              goers and home listeners alike with his well-constructed climatic
-              sets.
-            </p>
-            <p class="last-paragraph">
-              DRKS' passion for drum 'n' bass and deep house will inspire and
-              entertain you whereever you are.
-            </p>
-          </div>
+        <div class="container-fluid container-about">
+            <h2 class="page-heading"><i class="far fa-address-card"></i> About</h2>
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-xs-12 col-sm-6">
+                    <p class="first-paragraph">
+                        Born and raised in mid-70s south London, DRKS was hooked by the
+                        club scene in 90s.
+                    </p>
+                    <p>
+                        Inspired by his growing collection of reggae and hip hop vinyl,
+                        DRKS picked up DJing skills from friends and family.
+                    </p>
+                    <p>
+                        Since these early days he has delighted clubbers, house party
+                        goers and home listeners alike with his well-constructed climatic
+                        sets.
+                    </p>
+                    <p class="last-paragraph">
+                        DRKS' passion for drum 'n' bass and deep house will inspire and
+                        entertain you whereever you are.
+                    </p>
+                </div>
 
-          <!-- Column 2 -->
-          <div class="col-xs-12 col-sm-6">
-            <!--Zoom effect - Code from: https://mdbootstrap.com/docs/jquery/css/hover-effects/-->
-            <div class="view zoom portrait">
-              <img
-                src="assets/images/about-pic-small.jpg"
-                class="img-fluid shadow rounded float-right"
-                alt="DJ DRKS portrait pic"
-              />
+                <!-- Column 2 -->
+                <div class="col-xs-12 col-sm-6">
+                    <!--Zoom effect - Code from: https://mdbootstrap.com/docs/jquery/css/hover-effects/-->
+                    <div class="view zoom portrait">
+                        <img src="assets/images/about-pic-small.jpg" class="img-fluid shadow rounded float-right"
+                            alt="DJ DRKS portrait pic" />
+                    </div>
+                </div>
+                <!--</div>-->
             </div>
-          </div>
-          <!--</div>-->
         </div>
-      </div>
     </section>
     <section id="mixes">
-      <div class="container-fluid container-mixes">
-        <h2 class="page-heading"><i class="fas fa-headphones"></i> Mixes</h2>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <iframe
-              class="music-set"
-              width="960"
-              height="400"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-          </div>
+        <div class="container-fluid container-mixes">
+            <h2 class="page-heading"><i class="fas fa-headphones"></i> Mixes</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <iframe class="music-set" width="960" height="400" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <iframe class="music-set1" width="960" height="400" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <iframe
-              class="music-set1"
-              width="960"
-              height="400"
-              scrolling="no"
-              frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-          </div>
-        </div>
-      </div>
     </section>
     <section id="dates">
-      <div class="container-fluid container-dates">
-        <h2 class="page-heading"><i class="far fa-calendar-alt"></i> Dates</h2>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="view zoom portrait">
-              <img
-                src="assets/images/dates-pic-small.jpg"
-                class="img-fluid shadow rounded zoom"
-                alt="DJ DRKS portrait pic"
-              />
+        <div class="container-fluid container-dates">
+            <h2 class="page-heading"><i class="far fa-calendar-alt"></i> Dates</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="view zoom portrait">
+                        <img src="assets/images/dates-pic-small.jpg" class="img-fluid shadow rounded zoom"
+                            alt="DJ DRKS portrait pic" />
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <!--<div class="col-xs-12 col-sm-4">-->
-          <div>
-            <table class="table table-hover table-dark dates-table">
-              <tbody>
-                <tr>
-                  <!--<th scope="row">1</th>-->
-                  <td>Zoom</td>
-                  <td>22 Jan 2021</td>
-                  <td>9pm</td>
-                  <td>
-                    <!--Modal button-->
-                    <button
-                      type="button"
-                      class="btn btn-warning"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                      data-whatever="Zoom 22 Jan 2021"
-                    >
-                      Book
-                    </button>
-                    <!--Modal button end-->
-                  </td>
-                </tr>
-                <tr>
-                  <!--<th scope="row">2</th>-->
-                  <td>Zoom</td>
-                  <td>19 Feb 2021</td>
-                  <td>9pm</td>
-                  <td>
-                    <!--Modal button-->
-                    <button
-                      type="button"
-                      class="btn btn-warning"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                      data-whatever="Zoom 19 Feb 2021"
-                    >
-                      Book
-                    </button>
-                    <!--Modal button end-->
-                  </td>
-                </tr>
-                <!--Modal form--Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content bg-secondary">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true"><a data-hide="alert">&times;</a> </span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <!--<label for="fname">First Name:</label>-->
-                          <div class="row">
-                            <div class="col">
-                              <input
-                                class="text-input form-control"
-                                id="fname1"
-                                type="text"
-                                name="first_name"
-                                placeholder="First name"
-                                required
-                              />
-                            </div>
-                            <div class="col">
-                              <input
-                                class="text-input form-control"
-                                id="lname2"
-                                type="text"
-                                name="first_name"
-                                placeholder="First name"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <!--<label>Email:</label
-                            >--><input
-                            class="text-input form-control form-format"
-                            id="email-address"
-                            placeholder="Email address"
-                            type="text"
-                            required
-                          />
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                      <!--<h3 class="d-none" id="bookMessage"> Thank you for booking </h3>-->
-                      
-                      <!--<a href="#" class="alert-dismissible" data-dismiss="alert">&times;</a>-->
-                      <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <div class="row">
+                <div>
+                
+                    <table class="table table-hover table-dark dates-table">
+                        <tbody>
+                            <tr>
+                                <!--<th scope="row">1</th>-->
+                                <td>Zoom</td>
+                                <td>22 Jan 2021</td>
+                                <td>9pm</td>
+                                <td>
+                                    <!--Modal button-->
+                                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                                        data-target="#exampleModal" data-whatever="Zoom 22 Jan 2021">
+                                        Book
+                                    </button>
+                                    <!--Modal button end-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--<th scope="row">2</th>-->
+                                <td>Zoom</td>
+                                <td>19 Feb 2021</td>
+                                <td>9pm</td>
+                                <td>
+                                    <!--Modal button-->
+                                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                                        data-target="#exampleModal" data-whatever="Zoom 19 Feb 2021">
+                                        Book
+                                    </button>
+                                    <!--Modal button end-->
+                                </td>
+                            </tr>
+                            <!--Modal form--Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-secondary">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><a data-hide="alert">&times;</a> </span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <!--<label for="fname">First Name:</label>-->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input class="text-input form-control" id="fname1" type="text"
+                                                            name="first_name" placeholder="First name" required />
+                                                    </div>
+                                                    <div class="col">
+                                                        <input class="text-input form-control" id="lname2" type="text"
+                                                            name="first_name" placeholder="First name" required />
+                                                    </div>
+                                                </div>
+                                                <!--<label>Email:</label
+                            >--><input class="text-input form-control form-format" id="email-address"
+                                                    placeholder="Email address" type="text" required />
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!--<h3 class="d-none" id="bookMessage"> Thank you for booking </h3>-->
+
+                                            <!--<a href="#" class="alert-dismissible" data-dismiss="alert">&times;</a>-->
+                                            <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span></button>-->
 
-                       <!--<div class="alert alert-primary alert-dismissable d-none" id="bookMessage" role="alert">
+                                            <!--<div class="alert alert-primary alert-dismissable d-none" id="bookMessage" role="alert">
                          Thank you for your booking.
                         </div>
                         
@@ -340,152 +296,108 @@
                         >
                           Close
                         </button>-->
-                        
-                        
-                        <!--<button 
+
+
+                                            <!--<button 
                         type="button" 
                         class="btn btn-dark close" 
                         data-dismiss="alert" 
                         aria-label="Close">
                         Close
                         </button>-->
-                        
-                        <!--<button
+
+                                            <!--<button
                           type="button"
                           class="btn btn-warning"
                           onclick="myFunction()"
                         >
                           Book
                         </button>-->
-                        <div class="alert" style="display: none">
-                        <!--a class="close" data-hide="alert">x</a></div>-->
-                        
+                                            <div class="alert" style="display: none">
+                                                <!--a class="close" data-hide="alert">x</a></div>-->
 
-                        
-                            <!--<a class="close" data-hide="alert">-->
-                            <a data-hide="alert">
-                            <!--<strong>Warning!</strong> Best check yo self, you're not looking too good.-->
-                            <div class="alert alert-primary" role="alert">
-                                                Thank you for your booking.
-                                                    </div> <!--</a> -->
-                                    </a>
-                                </div>
-                                                        <!--<a class="close" data-hide="alert">-->
-                            <a data-hide="alert">
-                                                <button 
-                                                        type="button" 
-                                                        class="btn btn-dark" 
-                                                        data-dismiss="modal" 
-                                                        aria-label="Close">
-                                                        Close
+
+
+                                                <!--<a class="close" data-hide="alert">-->
+                                                <a data-hide="alert">
+                                                    <!--<strong>Warning!</strong> Best check yo self, you're not looking too good.-->
+                                                    <div class="alert alert-primary" role="alert">
+                                                        Thank you for your booking.
+                                                    </div>
+                                                    <!--</a> -->
+                                                </a>
+                                            </div>
+                                            <!--<a class="close" data-hide="alert">-->
+                                            <a data-hide="alert">
+                                                <button type="button" class="btn btn-dark" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    Close
                                                 </button>
-                                                </a> 
-                                                
-                                                
-                                <a href="#" onclick="$('.alert').show()"><button
-                                                        type="button"
-                                                        class="btn btn-warning"
-                                                        >
-                                                        Book
-                                                        </button>
-                                                        </a>
-                        
-                      </div>
-                    </div>
-                  </div>
+                                            </a>
+
+
+                                            <a href="#" onclick="$('.alert').show()"><button type="button"
+                                                    class="btn btn-warning">
+                                                    Book
+                                                </button>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Modal form end-->
+                        </tbody>
+                    </table>
                 </div>
-                <!--Modal form end-->
-              </tbody>
-            </table>
-          </div>
+            </div>
         </div>
-      </div>
     </section>
     <section id="contact">
-      <div class="container-fluid container-contact">
-        <h2 class="page-heading"><i class="far fa-envelope"></i> Contact</h2>
-        <div class="row">
-          <div class="col-xs-12">
-            <form
-              class="contact-form"
-              action="https://formdump.codeinstitute.net/"
-              method="post"
-            >
-              <h4>Send DRKS a message</h4>
-              <label for="fname2">First Name</label>
-              <input
-                class="text-input form-control"
-                id="fname2"
-                type="text"
-                name="first_name"
-                placeholder="First name"
-                required
-              />
-              <label for="lname1">Last Name</label>
-              <input
-                class="text-input form-control"
-                id="lname1"
-                type="text"
-                name="last_name"
-                placeholder="Last name"
-                required
-              />
-              <label for="email1">Email</label>
-              <input
-                class="text-input form-control"
-                id="email1"
-                type="email"
-                name="email_address"
-                placeholder="Email"
-                required
-              />
-              <label for="message">Message</label>
-              <textarea
-                class="text-input form-control"
-                id="message"
-                rows="5"
-                type="text"
-                name="message"
-                placeholder="Type message"
-                required
-              ></textarea>
-              <input class="join-button" type="submit" value="Submit" />
-            </form>
-          </div>
+        <div class="container-fluid container-contact">
+            <h2 class="page-heading"><i class="far fa-envelope"></i> Contact</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
+                        <h4>Send DRKS a message</h4>
+                        <label for="fname2">First Name</label>
+                        <input class="text-input form-control" id="fname2" type="text" name="first_name"
+                            placeholder="First name" required />
+                        <label for="lname1">Last Name</label>
+                        <input class="text-input form-control" id="lname1" type="text" name="last_name"
+                            placeholder="Last name" required />
+                        <label for="email1">Email</label>
+                        <input class="text-input form-control" id="email1" type="email" name="email_address"
+                            placeholder="Email" required />
+                        <label for="message">Message</label>
+                        <textarea class="text-input form-control" id="message" rows="5" type="text" name="message"
+                            placeholder="Type message" required></textarea>
+                        <input class="join-button" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <footer></footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/0d3dc6dda0.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/0d3dc6dda0.js" crossorigin="anonymous"></script>
 
     <!--Java script for modal-->
     <script>
-      $("#exampleModal").on("show.bs.modal", function (event) {
-        var button = $(event.relatedTarget); // Button that triggered the modal
-        var recipient = button.data("whatever"); // Extract info from data-* attributes
-        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        var modal = $(this);
-        modal.find(".modal-title").text("Booking for " + recipient);
-      });
+        $("#exampleModal").on("show.bs.modal", function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var recipient = button.data("whatever"); // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this);
+            modal.find(".modal-title").text("Booking for " + recipient);
+        });
     </script>
     <!--end Java script-->
 
@@ -495,23 +407,24 @@
         alert("Thanks for your booking.");
       }
     </script>-->
-    
+
     <!--Code for submit confirmation for forms: Antonio -->
     <script>
-    function myFunction() {
-     console.log("hey"); document.getElementById("bookMessage").classList.remove("d-none");
-     }
+        function myFunction() {
+            console.log("hey"); document.getElementById("bookMessage").classList.remove("d-none");
+        }
     </script>
     <script>
 
-$(function(){
-   
-        $("[data-hide]").on("click", function(){
-        $("." + $(this).attr("data-hide")).hide()
+        $(function () {
+
+            $("[data-hide]").on("click", function () {
+                $("." + $(this).attr("data-hide")).hide()
+            });
         });
-        });
-        </script>
+    </script>
 
     <!--End submit form code-->
-  </body>
+</body>
+
 </html>

@@ -1,9 +1,11 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700|Geostar|Londrina+Shadow');*/
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&:wght@400;500;600;700&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');*/
+
 
 /*-------------------------------------------------Navbar */
-#logo {
+.font-audiowide {
   /*float: left;
    margin-top: 0.5rem;
    margin-left: 30px; 
@@ -78,6 +80,69 @@
   justify-content: start;
   margin-bottom: 50px;
 }
+/*--------------------------------------------------------preHome--*/
+/*.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0)
+}*/
+.container-prehome {
+  background: url("../images/djdecks2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 95px 40px 95px 40px;
+  /*height: 100%;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  /*justify-content: flex-end;
+  position: relative;*/
+}
+
+.container-prehome .row {
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-content: center;
+}
+
+.toprow-home {
+  margin-top: 75px;
+}
+
+.jumbotron {
+    color: #fff;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: auto;
+    padding: 0; 
+}
+
+/*.container-prehome h1 {
+    font-size: 7.5rem;
+}
+
+.container-prehome h3 {
+    font-size: 3.0rem;
+}*/
+.lead {
+    font-family: "racing sans one", sans-serif;
+    font-weight: 400;
+}
+
+.container-prehome col-md-6 {
+    padding-right: 14px;
+    padding-left: 14px;
+    }
+
+.signup {
+        justify-content: flex-end;
+}
+
 
 /*--------------------------------------------------------Home--*/
 /*.container-home {
@@ -161,7 +226,7 @@
   left: 10%;
   bottom: 10%;*/
   color: #fff;
-  background-color: rgba(60, 60, 60, 0.6);
+  background-color: rgba(60, 60, 60, 0.8);
   max-width: 316px;
   flex: 400px;
   min-width: 0;
@@ -199,7 +264,8 @@
 }
 
 .twitter-timeline {
-    min-width: 0px!important;
+    /*min-width: 315px!important;*/
+    display: flex!important;
 }
 /*--------------------------------------------------------About--*/
 .container-about {
@@ -258,7 +324,7 @@ p {
 /*--------------------------------------------------------Mixes--*/
 .container-mixes {
   
-  background: url(../images/london-outside-people.jpg) no-repeat center center;
+  background: url(../images/nightclub.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -311,7 +377,7 @@ p {
 /*--------------------------------------------------------Dates--*/
 .container-dates {
   
-  background: url(../images/djdecks.jpg) no-repeat center center;
+  background: url(../images/blue-disco.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -406,7 +472,7 @@ p {
 /*--------------------------------------------------------Contact--*/
 .container-contact {
   
-  background: url(../images/streetlights.jpg) no-repeat center center;
+  background: url(../images/djdecks.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -443,7 +509,7 @@ p {
   left: 10%;
   bottom: 10%;*/
   color: #fff;
-  background-color: rgba(60, 60, 60, 0.6);
+  background-color: rgba(60, 60, 60, 0.9);
   max-width: 400px;
   flex: 400px;
   min-width: 0;
@@ -466,3 +532,116 @@ p {
     min-width: 425px;
 }
 }
+
+/*---------------Home page font-size media queries--------------*/
+@media (min-width: 0px) {
+
+.container-prehome h1 {
+      font-size: 4.5rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 576px) {
+
+.container-prehome h1 {
+      font-size: 6.5rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 2.5rem;
+  }
+}
+
+
+/*@media (min-width: 768px) {
+
+.container-prehome h1 {
+      font-size: 5.5rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 2.0rem;
+  }
+}*/
+
+/*@media (min-width: 992px) {
+.container-prehome h1 {
+      font-size: 6.5rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 2.5rem;
+  }
+}*/
+
+@media (min-width: 1200px) {
+  
+  .container-prehome h1 {
+      font-size: 7.5rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 3.0rem;
+  }
+}
+
+/*--------------Sign-up form & Twitter feed media queries-----------------*/
+
+@media (max-width: 768px) {
+  .signup-form {
+    margin-left: auto!important;
+    margin-right: auto;
+  }
+
+.twitter-timeline {
+    margin-left: auto!important;
+    margin-right: auto;
+}
+}
+
+
+
+
+/*--------------Sign-up form media queries-----------------*/
+/*@media (max-width: 1116px) {
+  .signup-form {
+    padding: 10px 10px 10px 10px;
+    margin-top: 70px;
+    margin-bottom: 5px;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: small;
+  }
+
+  form h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-input {
+    height: 20px;
+  }
+
+  .form-control {
+    font-size: 0.8rem;
+  }
+
+  .join-button {
+    margin-top: 10px;
+    font-size: 80%;
+    padding: 4px 10px 4px 10px;
+  }
+
+  .twitter-timeline {
+    margin-top: 70px !important;
+    width: 250px !important;
+    height: 225px !important;
+  }
+}*/
