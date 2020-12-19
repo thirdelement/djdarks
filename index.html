@@ -20,7 +20,6 @@
                     <a class="navbar-brand" href="index.html">
                         <h1 class="font-audiowide">DRKS</h1>
                     </a>
-                    <!--<h2 class="navbar-brand" id="logo-sub">DJ/Artist</h2>-->
                 </li>
             </ul>
             <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
@@ -33,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="active nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#prehome">Home</a>
                     </li>
                     <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link" href="#about">About</a>
@@ -47,31 +46,24 @@
                     <li class="nav-item mr-2" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <!--Code for li data-toggle here: https://aleesang.github.io/milestone-project-one/#music-->
+                    <!--Code for li data-toggle here: https://getbootstrap.com/docs/4.0/components/collapse/-->
                 </ul>
             </div>
         </div>
-        <!--Code for Navbar here: https://stackoverflow.com/questions/35154284/bootstrap-how-to-put-your-navbar-on-top-of-your-background-image-->
     </nav>
     <section id="prehome">
         <div class="container-fluid container-prehome">
-            <!--call out-->
-
             <div class="row toprow-home">
                 <div class="col-sm-12 callout jumbotron text-center">
-                    <!--<section class="callout jumbotron text-center">-->
                     <h1 class="jumbotron-header font-audiowide">DRKS</h1>
-                    <!--<section class="callout text-center my-auto">
-             <h1 class="font-audiowide">DRKS</h1>-->
                     <h3 class="lead">
                         Drum 'n' Bass & House DJ
                     </h3>
                 </div>
             </div>
-           <div class="row">
-                <!--<div class="col-md-1"></div>-->
+            <div class="row">
                 <div class="col-sm-12 col-md-6 signup">
-                    <form class="signup-form ml-auto" action="https://formdump.codeinstitute.net/" method="post">
+                    <form class="signup-form ml-auto" onsubmit="myFunction()">
                         <h4>Sign up for news & mixes</h4>
                         <label for="fname">First Name</label>
                         <input class="text-input form-control" id="fname" type="text" name="first_name"
@@ -89,102 +81,42 @@
                     <a class="twitter-timeline" data-lang="en" data-width="315" data-height="310" data-theme="dark"
                         href="https://twitter.com/Drum_nBass?ref_src=twsrc%5Etfw">Tweets by Drum_nBass</a>
                 </div>
-               <!--<div class="col-md-1">
-                </div>--> 
             </div>
         </div>
-       
     </section>
-    <!--<section id="home">
-      <div class="container-fluid container-home">
-        <div class="row">
-          <div class="col-xs-12">
-            <form
-              class="signup-form"
-              action="https://formdump.codeinstitute.net/"
-              method="post"
-            >
-              <h4>Sign up for news & mixes</h4>
-              <label for="fname">First Name</label>
-              <input
-                class="text-input form-control"
-                id="fname3"
-                type="text"
-                name="first_name"
-                placeholder="First name"
-                required
-              />
-              <label for="lname">Last Name</label>
-              <input
-                class="text-input form-control"
-                id="lname3"
-                type="text"
-                name="last_name"
-                placeholder="Last name"
-                required
-              />
-              <label for="email">Email</label>
-              <input
-                class="text-input form-control"
-                id="email3"
-                type="email"
-                name="email_address"
-                placeholder="Email"
-                required
-              />
-              <input class="join-button" type="submit" value="Submit" />
-            </form>
-          </div>
-
-          <div class="col-xs-12">
-            <a
-              class="twitter-timeline"
-              data-lang="en"
-              data-width="315"
-              data-height="275"
-              data-theme="dark"
-              href="https://twitter.com/Drum_nBass?ref_src=twsrc%5Etfw"
-              >Tweets by Drum_nBass</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>-->
     <section id="about">
         <div class="container-fluid container-about">
             <h2 class="page-heading"><i class="far fa-address-card"></i> About</h2>
-            <!-- Row 1 -->
             <div class="row">
-                <!-- Column 1 -->
+                <!--<div class="col-md-1"></div>-->
                 <div class="col-xs-12 col-sm-6">
                     <p class="first-paragraph">
-                        Born and raised in mid-70s south London, DRKS was hooked by the
-                        club scene in 90s.
+                        Born in mid-70s south London, DRKS was raised listening to soul / rare groove and reggae. Any
+                        spare pocket money he had was quickly exchanged for vinyl.
                     </p>
                     <p>
-                        Inspired by his growing collection of reggae and hip hop vinyl,
-                        DRKS picked up DJing skills from friends and family.
+                        When his cousin showed him the basics on a pair of Kenwood decks his natural skill and timing
+                        was clear. Since then, DRKS has been influenced massively by jungle and blown away by the
+                        ambient, melodic tones played by LTJ Bukem, 4 Hero and liquid drum ‘n’ bass contemporaries.
                     </p>
                     <p>
-                        Since these early days he has delighted clubbers, house party
-                        goers and home listeners alike with his well-constructed climatic
-                        sets.
+                        At the end of the noughties he met fellow DJ Clarky who introduced him to Virtual DJ. This
+                        sparked many hours of winging each other on D‘n’B and House mix sessions and developed DRKS into
+                        the accomplished artist he is today.
                     </p>
                     <p class="last-paragraph">
-                        DRKS' passion for drum 'n' bass and deep house will inspire and
-                        entertain you whereever you are.
+                        Whenever and wherever DRKS plays heads are nodding, the crowd is bouncing and the vibes are
+                        good.
                     </p>
                 </div>
-
-                <!-- Column 2 -->
                 <div class="col-xs-12 col-sm-6">
                     <!--Zoom effect - Code from: https://mdbootstrap.com/docs/jquery/css/hover-effects/-->
-                    <div class="view zoom portrait">
+                    <div class="portrait">
                         <img src="assets/images/about-pic-small.jpg" class="img-fluid shadow rounded float-right"
                             alt="DJ DRKS portrait pic" />
                     </div>
                 </div>
-                <!--</div>-->
+                <!--<div class="col-md-1"></div>-->
             </div>
         </div>
     </section>
@@ -194,13 +126,22 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <iframe class="music-set" width="960" height="400" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816600457&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        alt="DJ DRKS mix 1"></iframe>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <iframe class="music-set1" width="960" height="400" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/662654822&color=%235c5454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        alt="DJ DRKS mix 2"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <iframe class="music-set2" width="100%" height="195"
+                        src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDj_Drks%2Fgalactic%2F"
+                        frameborder="0" alt="DJ DRKS mix 2"></iframe>
                 </div>
             </div>
         </div>
@@ -212,13 +153,13 @@
                 <div class="col-xs-12">
                     <div class="view zoom portrait">
                         <img src="assets/images/dates-pic-small.jpg" class="img-fluid shadow rounded zoom"
-                            alt="DJ DRKS portrait pic" />
+                            alt="DJ DRKS in the mix pic" />
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div>
-                
+
                     <table class="table table-hover table-dark dates-table">
                         <tbody>
                             <tr>
@@ -249,7 +190,7 @@
                                     <!--Modal button end-->
                                 </td>
                             </tr>
-                            <!--Modal form--Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
+                            <!--Modal form - Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -261,92 +202,42 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
-                                                <!--<label for="fname">First Name:</label>-->
+                                            <form onsubmit="myFunction()">
                                                 <div class="row">
                                                     <div class="col">
                                                         <input class="text-input form-control" id="fname1" type="text"
-                                                            name="first_name" placeholder="First name" required />
+                                                            name="first_name" placeholder="First name" required>
                                                     </div>
                                                     <div class="col">
                                                         <input class="text-input form-control" id="lname2" type="text"
-                                                            name="first_name" placeholder="First name" required />
+                                                            name="last_name" placeholder="Last name" required>
                                                     </div>
                                                 </div>
-                                                <!--<label>Email:</label
-                            >--><input class="text-input form-control form-format" id="email-address"
-                                                    placeholder="Email address" type="text" required />
+                                                <div><input class="text-input form-control form-format"
+                                                        id="email-address" placeholder="Email address" type="email"
+                                                        name="email_address" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button type="submit"
+                                                            class="btn btn-warning form-format button-book">
+                                                            Book
+                                                        </button>
+                                                        <button type="button"
+                                                            class="btn btn-dark form-format button-book"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            Close
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </form>
                                         </div>
                                         <div class="modal-footer">
-                                            <!--<h3 class="d-none" id="bookMessage"> Thank you for booking </h3>-->
-
-                                            <!--<a href="#" class="alert-dismissible" data-dismiss="alert">&times;</a>-->
-                                            <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span></button>-->
-
-                                            <!--<div class="alert alert-primary alert-dismissable d-none" id="bookMessage" role="alert">
-                         Thank you for your booking.
-                        </div>
-                        
-                        <button
-                          type="button"
-                          class="btn btn-dark"
-                          data-dismiss="modal"
-                        >
-                          Close
-                        </button>-->
-
-
-                                            <!--<button 
-                        type="button" 
-                        class="btn btn-dark close" 
-                        data-dismiss="alert" 
-                        aria-label="Close">
-                        Close
-                        </button>-->
-
-                                            <!--<button
-                          type="button"
-                          class="btn btn-warning"
-                          onclick="myFunction()"
-                        >
-                          Book
-                        </button>-->
-                                            <div class="alert" style="display: none">
-                                                <!--a class="close" data-hide="alert">x</a></div>-->
-
-
-
-                                                <!--<a class="close" data-hide="alert">-->
-                                                <a data-hide="alert">
-                                                    <!--<strong>Warning!</strong> Best check yo self, you're not looking too good.-->
-                                                    <div class="alert alert-primary" role="alert">
-                                                        Thank you for your booking.
-                                                    </div>
-                                                    <!--</a> -->
-                                                </a>
-                                            </div>
-                                            <!--<a class="close" data-hide="alert">-->
-                                            <a data-hide="alert">
-                                                <button type="button" class="btn btn-dark" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    Close
-                                                </button>
-                                            </a>
-
-
-                                            <a href="#" onclick="$('.alert').show()"><button type="button"
-                                                    class="btn btn-warning">
-                                                    Book
-                                                </button>
-                                            </a>
-
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--Modal form end-->
+                            </div> 
+                            <!--END Modal form-->
                         </tbody>
                     </table>
                 </div>
@@ -358,7 +249,7 @@
             <h2 class="page-heading"><i class="far fa-envelope"></i> Contact</h2>
             <div class="row">
                 <div class="col-xs-12">
-                    <form class="contact-form" action="https://formdump.codeinstitute.net/" method="post">
+                    <form class="contact-form" onsubmit="myFunction()">
                         <h4>Send DRKS a message</h4>
                         <label for="fname2">First Name</label>
                         <input class="text-input form-control" id="fname2" type="text" name="first_name"
@@ -388,7 +279,7 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://kit.fontawesome.com/0d3dc6dda0.js" crossorigin="anonymous"></script>
 
-    <!--Java script for modal-->
+    <!--Java script for modal - Code from: https://getbootstrap.com/docs/4.5/components/modal/-->
     <script>
         $("#exampleModal").on("show.bs.modal", function (event) {
             var button = $(event.relatedTarget); // Button that triggered the modal
@@ -399,32 +290,13 @@
             modal.find(".modal-title").text("Booking for " + recipient);
         });
     </script>
-    <!--end Java script-->
-
-    <!--Code for submit confirmation for forms: https://www.w3schools.com/js/js_popup.asp -->
-    <!--<script>
-      function myFunction() {
-        alert("Thanks for your booking.");
-      }
-    </script>-->
-
-    <!--Code for submit confirmation for forms: Antonio -->
+    <!--END Java script for modal-->
+    <!--Java script for submit confirmation for forms: https://www.w3schools.com/js/js_popup.asp-->
     <script>
         function myFunction() {
-            console.log("hey"); document.getElementById("bookMessage").classList.remove("d-none");
+            alert("Thank you for your booking.");
         }
     </script>
-    <script>
-
-        $(function () {
-
-            $("[data-hide]").on("click", function () {
-                $("." + $(this).attr("data-hide")).hide()
-            });
-        });
-    </script>
-
-    <!--End submit form code-->
+    <!--END Java script for submit confirmation-->
 </body>
-
 </html>

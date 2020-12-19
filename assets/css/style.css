@@ -1,6 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700|Geostar|Londrina+Shadow');*/
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&family=Oleo+Script:wght@400;700&family=Racing+Sans+One&:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&family=Oleo+Script:wght@400;700&family=Racing+Sans+One:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
 /*@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');*/
 
 
@@ -61,6 +61,19 @@
   margin-left: 3em;
 }
 
+/* Modify brand and text color  
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+	color: green; 
+} */
+
+.navbar-nav .nav-link:hover {
+    color:#0664c6!important;
+}
+
+.navbar-brand:hover {
+    color:#0664c6!important;
+}
 /*body{
     margin: 30px;
 }
@@ -75,10 +88,11 @@
    margin-top: 0.5rem;
    margin-left: 30px; 
    margin-right: 20px;*/
-  font-family: "Audiowide";
+  font-family: "Audiowide", sans-serif;
   color: whitesmoke;
   justify-content: start;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px
 }
 /*--------------------------------------------------------preHome--*/
 /*.opaque-overlay {
@@ -90,12 +104,15 @@
     background-color: rgba(0,0,0,0)
 }*/
 .container-prehome {
-  background: url("../images/djdecks2.jpg") no-repeat center center;
+    
+  /*background: url("../images/djdecks2.jpg") no-repeat center center;*/
+  background: url("../images/djdecks2.jpg") no-repeat bottom right fixed;
+  /*------Image from Nikolai Chernichenko - https://unsplash.com/@perfectcoding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText----*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 20px 85px 20px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -170,7 +187,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 20px 85px 20px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -264,17 +281,18 @@
 }
 
 .twitter-timeline {
-    /*min-width: 315px!important;*/
+    min-width: 0px!important;
     display: flex!important;
 }
 /*--------------------------------------------------------About--*/
 .container-about {
   background: url("../images/croydon.jpg") no-repeat center center;
+  /*--------Image from Pulse-v2 - https://www.deviantart.com/pulse-v2/art/Croydon-Skyline-16563186---*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 20px 85px 20px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -294,8 +312,18 @@
     margin-left: auto;
 }*/
 
-p {
+/*----In order to center portrait image below 576px------*/
+.container-about .col-sm-6 {
+    width: auto;
+        /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+/*---End portrait image center---*/
+
+.container-about p {
   color: white;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 /*.last-paragraph {
@@ -305,7 +333,8 @@ p {
 .portrait {
     margin-top: 20px;
     /*min-width: 250px;*/
-    min-height: 350px;
+    /*min-height: 350px;*/
+    /*float: left;*/
 }
 
 .video {
@@ -325,11 +354,12 @@ p {
 .container-mixes {
   
   background: url(../images/nightclub.jpg) no-repeat center center;
+  /*---Image from Fred Moon - https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 20px 85px 20px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -371,18 +401,23 @@ p {
     font-weight: 100;
     width: 100%;
     height: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.music-set2 {
+    padding-top: 20px;
 }
 
 /*--------------------------------------------------------Dates--*/
 .container-dates {
   
   background: url(../images/blue-disco.jpg) no-repeat center center;
+  /*--Image from Raphael Schaller - https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 30px 85px 30px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -449,6 +484,10 @@ p {
     opacity: none!important;
 }
 
+.button-book {
+    float: right;
+    margin-left: 10px;
+}
 /*-------------Reduce table width----------------*/
 /*.container-dates .row .d-flex .col-xs-6 {
     display: inline-flex!important;
@@ -463,6 +502,18 @@ p {
   height: 0;
 }
 
+/*--CSS for Modal validation from https://codepen.io/philbaker/pen/MBrVwQ--*/
+/* .invalid class prevents CSS from automatically applying */
+.invalid input:required:invalid {
+  background: #BE4C54;
+}
+
+/* Mark valid inputs during .invalid state */
+.invalid input:required:valid {
+  background: #17D654;
+}
+/*--End CSS for Modal validation--*/
+
 /*Ensure dates-table stays aligned to center*/
 /*.container-dates .row .col-sm-4 {
     max-width: none;
@@ -473,11 +524,12 @@ p {
 .container-contact {
   
   background: url(../images/djdecks.jpg) no-repeat center center;
+  /*--Image from Alexander Popov - https://unsplash.com/@5tep5?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 95px 40px 95px 40px;
+  padding: 85px 30px 85px 30px;
   /*height: 100%;
   display: flex;
   align-items: center;
@@ -535,6 +587,17 @@ p {
 
 /*---------------Home page font-size media queries--------------*/
 @media (min-width: 0px) {
+
+.container-prehome h1 {
+      font-size: 3.75rem;
+  }
+
+  .container-prehome h3 {
+      font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 320px) {
 
 .container-prehome h1 {
       font-size: 4.5rem;
