@@ -1,29 +1,13 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Faster+One:wght@100;200;300;400;500;600;700|Geostar|Londrina+Shadow');*/
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&family=Faster+One&family=Geostar&family=Londrina+Outline:wght@100;200;300;400;500;600;700&family=Londrina+Shadow&family=Oleo+Script:wght@400;700&family=Racing+Sans+One:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
-/*@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');*/
 
-
-/*-------------------------------------------------Navbar */
+/*-------------------------------------------------Navbar--*/
 .font-audiowide {
-  /*float: left;
-   margin-top: 0.5rem;
-   margin-left: 30px; 
-   margin-right: 20px;*/
-  font-family: "Audiowide";
-  /*font-weight: 600;
-   font-size: 5em;
-   color: black;*/
+  font-family: "Audiowide", sans-serif;
 }
 
 #logo-sub {
-  /*float: left;
-    margin-top: 4.5rem;
-    margin-left: 1rem;
-    font-family: "Audiowide";
-    color: black;*/
   display: inline;
-  font-family: "Audiowide";
+  font-family: "Audiowide", sans-serif;
 }
 
 #logo-nav {
@@ -50,8 +34,9 @@
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg Box='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+/*-- Code for custom-toggler here: https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color --*/
 
 .custom-toggler.navbar-toggler {
   border-color: transparent;
@@ -61,67 +46,37 @@
   margin-left: 3em;
 }
 
-/* Modify brand and text color  
-.navbar-custom .navbar-brand, 
-.navbar-custom .navbar-text { 
-	color: green; 
-} */
-
 .navbar-nav .nav-link:hover {
     color:#0664c6!important;
 }
 
 .navbar-brand:hover {
-    color:#0664c6!important;
-}
-/*body{
-    margin: 30px;
+    color:#f8f9fa!important;
 }
 
-/*-------------------------------------------General----------*/
-/*h2 {
-    color: whitesmoke;
-}*/
+/*-------------------------------------------------General--*/
 
 .page-heading {
-  /*float: left;
-   margin-top: 0.5rem;
-   margin-left: 30px; 
-   margin-right: 20px;*/
   font-family: "Audiowide", sans-serif;
   color: whitesmoke;
   justify-content: start;
   margin-bottom: 30px;
   margin-top: 20px
 }
-/*--------------------------------------------------------preHome--*/
-/*.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0)
-}*/
-.container-prehome {
-    
-  /*background: url("../images/djdecks2.jpg") no-repeat center center;*/
+
+/*-------------------------------------------------Home--*/
+
+.container-home {
   background: url("../images/djdecks2.jpg") no-repeat bottom right fixed;
-  /*------Image from Nikolai Chernichenko - https://unsplash.com/@perfectcoding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText----*/
+  /*--Image from Nikolai Chernichenko - https://unsplash.com/@perfectcoding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 85px 20px 85px 20px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  /*justify-content: center;*/
-  /*justify-content: flex-end;
-  position: relative;*/
 }
 
-.container-prehome .row {
+.container-home .row {
   margin-right: 0px;
   margin-left: 0px;
   justify-content: center;
@@ -139,19 +94,12 @@
     padding: 0; 
 }
 
-/*.container-prehome h1 {
-    font-size: 7.5rem;
-}
-
-.container-prehome h3 {
-    font-size: 3.0rem;
-}*/
 .lead {
     font-family: "racing sans one", sans-serif;
     font-weight: 400;
 }
 
-.container-prehome col-md-6 {
+.container-home col-md-6 {
     padding-right: 14px;
     padding-left: 14px;
     }
@@ -160,108 +108,25 @@
         justify-content: flex-end;
 }
 
-
-/*--------------------------------------------------------Home--*/
-/*.container-home {
-  background: url("eclipse.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-
-.my-container {
-  border: 1px solid green;
-}
-.my-row {
-  border: 3px solid red;
-}
-
-.my-col {
-  border: 3px dotted blue;
-}
-
-.container-home {
-  background: url("../images/eclipse.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 85px 20px 85px 20px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  /*justify-content: center;*/
-  /*justify-content: flex-end;
-  position: relative;*/
-}
-
-/*.jumbotron {
-    background-color: transparent;
-}*/
-
-.container-home .row {
-  display: block;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top: 75px;
-}
-
-/*.col {
-  max-width: 75%;
-}*/
-
-/*.form-group {
-  margin-bottom: 0;
-  /* margin-right: 1rem;
-    background-color: #006dcc;
-}*/
-
-/*.form-label{
-    color: white;
-}*/
-
-.form-control {
-  border-radius: 0;
-  /*border: none;*/
-}
-
-/*.fixed-bottom {
-    position: absolute;
-    /*left: 65%;
-    bottom: 5%;
-}*/
-
 .signup-form {
-  /*position: sticky;
-  left: 80%;
-  top: 60%;
-  margin-top: 150px;
-  margin-left: 35rem;
-  margin-right: 2rem;
-  position: absolute;
-  left: 10%;
-  bottom: 10%;*/
   color: #fff;
   background-color: rgba(60, 60, 60, 0.8);
   max-width: 316px;
   flex: 400px;
   min-width: 0;
-  /*position: absolute; 
-  left: 10%;*/
   padding: 20px 20px 20px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
 .text-input {
   background: transparent;
   color: #fafafa;
-  /*width: 100%;*/
   height: 25px;
-  /*margin: 5px 0 20px 0;
-  border: 1px solid #fafafa;
-  border-radius: 2px;*/
 }
 
 .join-button {
@@ -284,92 +149,54 @@
     min-width: 0px!important;
     display: flex!important;
 }
-/*--------------------------------------------------------About--*/
+
+/*-------------------------------------------------About--*/
+
 .container-about {
   background: url("../images/croydon.jpg") no-repeat center center;
-  /*--------Image from Pulse-v2 - https://www.deviantart.com/pulse-v2/art/Croydon-Skyline-16563186---*/
+  /*--Image from Pulse-v2 - https://www.deviantart.com/pulse-v2/art/Croydon-Skyline-16563186--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 85px 20px 85px 20px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;*/
 }
 
 .container-about .row {
   margin-right: 5px;
   margin-left: 5px;
-  /*Display setting below to enable DJ DRKS portrait to enable index.html 'float-right' setting*/
-  /*display: grid;*/
 }
 
-/*#about-text {
-    margin-right: auto;
-    margin-left: auto;
-}*/
-
-/*----In order to center portrait image below 576px------*/
-.container-about .col-sm-6 {
+/*--To center portrait image below 576px--*/
+.container-about .col-md-5 {
     width: auto;
-        /*display: block;*/
     margin-left: auto;
     margin-right: auto;
 }
-/*---End portrait image center---*/
-
+/*--End portrait image center--*/
+  
 .container-about p {
   color: white;
   font-family: "Roboto Mono", sans-serif;
 }
 
-/*.last-paragraph {
-  margin-bottom: 0;
-}*/
-
 .portrait {
     margin-top: 20px;
-    /*min-width: 250px;*/
-    /*min-height: 350px;*/
-    /*float: left;*/
 }
 
-.video {
-  /*display: block;*/
-  /*width: 560px;
-  height: 315px;*/
-  /*margin-left: 50%;
-    margin-right: 50%;*/
-  /*position: absolute;*/
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
-  border: none;
-}
+/*-------------------------------------------------Mixes--*/
 
-/*--------------------------------------------------------Mixes--*/
 .container-mixes {
-  
   background: url(../images/nightclub.jpg) no-repeat center center;
-  /*---Image from Fred Moon - https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
+  /*--Image from Fred Moon - https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 85px 20px 85px 20px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 95px 40px 95px 40px;*/
 }
 
 .container-mixes .row {
-    /*display: flex;*/
     justify-content: center;
 }
 
@@ -381,11 +208,12 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-family: Interstate, "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
     font-weight: 100;
     width: 100%;
     height: 100%;
+    border: 0px;
 }
 
 .music-set1 {
@@ -396,21 +224,24 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-family: Interstate, "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
     font-weight: 100;
     width: 100%;
     height: 100%;
     padding-top: 20px;
+    border: 0px;
 }
 
 .music-set2 {
     padding-top: 20px;
+    width: 100%;
+    border: 0px;
 }
 
-/*--------------------------------------------------------Dates--*/
+/*-------------------------------------------------Dates--*/
+
 .container-dates {
-  
   background: url(../images/blue-disco.jpg) no-repeat center center;
   /*--Image from Raphael Schaller - https://unsplash.com/@raphaelphotoch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText--*/
   -webkit-background-size: cover;
@@ -418,11 +249,6 @@
   -o-background-size: cover;
   background-size: cover;
   padding: 85px 30px 85px 30px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  /*justify-content: center;
-  position: relative;*/
 }
 
 .container-dates .row {
@@ -430,22 +256,8 @@
 }
 
 .dates-form {
-  /*position: sticky;
-  left: 80%;
-  top: 60%;
-  margin-top: 150px;
-  margin-left: 35rem;
-  margin-right: 2rem;
-  position: absolute;
-  left: 10%;
-  bottom: 10%;*/
   color: #fff;
   background-color: rgba(120, 143, 18, 0.849);
-  /*max-width: 400px;*/
-  /*flex: 400px;*/
-  /*min-width: 700px;*/
-  /*position: absolute; 
-  left: 10%;*/
   padding: 20px 20px 20px 20px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -453,74 +265,35 @@
 }
 
 .dates-table {
-    /*display: flex;*/
     margin-top: 20px;
-    /*max-width: 500px;*/
-
 }
 
-/*Add margin-top to Email address element in modal form*/
+/*--Add margin-top to email address element & buttons in modal form--*/
 .form-format {
     margin-top: 20px;
 } 
 
-/*Add white background color for placeholder in modal form*/
+/*--Add white background color for placeholder in modal form--*/
 .container-dates .text-input {
   background: transparent;
   color: black;
-  /*width: 100%;*/
   height: 25px;
   background-color: #cccccc;
-  /*margin: 5px 0 20px 0;
-  border: 1px solid #fafafa;
-  border-radius: 2px;*/
 }
 
+/*--Formatting for cross in top right of booking form--*/
 .close {
     float: right;
-    font-size: none!important;
-    font-weight: none!important;
     text-shadow: none!important;
-    opacity: none!important;
 }
 
+/*--Move Book and Close buttons to right on booking form--*/
 .button-book {
     float: right;
     margin-left: 10px;
 }
-/*-------------Reduce table width----------------*/
-/*.container-dates .row .d-flex .col-xs-6 {
-    display: inline-flex!important;
-}*/
 
-.dates-font {
-    color:#cccccc
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-/*--CSS for Modal validation from https://codepen.io/philbaker/pen/MBrVwQ--*/
-/* .invalid class prevents CSS from automatically applying */
-.invalid input:required:invalid {
-  background: #BE4C54;
-}
-
-/* Mark valid inputs during .invalid state */
-.invalid input:required:valid {
-  background: #17D654;
-}
-/*--End CSS for Modal validation--*/
-
-/*Ensure dates-table stays aligned to center*/
-/*.container-dates .row .col-sm-4 {
-    max-width: none;
-    width: none!important;
-}*/
-
-/*--------------------------------------------------------Contact--*/
+/*-------------------------------------------------Contact--*/
 .container-contact {
   
   background: url(../images/djdecks.jpg) no-repeat center center;
@@ -530,64 +303,32 @@
   -o-background-size: cover;
   background-size: cover;
   padding: 85px 30px 85px 30px;
-  /*height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;*/
 }
-
-/*.img-croydon {
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100%;
-  width: 100%;
-}*/
 
 .container-contact .row {
   justify-content: center;
 }
 
 .contact-form {
-  /*position: sticky;
-  left: 80%;
-  top: 60%;
-  margin-top: 150px;
-  margin-left: 35rem;
-  margin-right: 2rem;
-  position: absolute;
-  left: 10%;
-  bottom: 10%;*/
   color: #fff;
   background-color: rgba(60, 60, 60, 0.9);
   max-width: 400px;
   flex: 400px;
   min-width: 0;
-  /*position: absolute; 
-  left: 10%;*/
   padding: 20px 20px 20px 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+/*--Override width properties for Contact form--*/
 .container-contact .row .form-control {
   display: inline;
-  /*border: none;*/
 }
 
-/*---------------------Media queries-------*/
-/*Ensure dates-table does not display less than 450px for tablet and above*/
-@media (min-width: 576px){
-.dates-table {
-    min-width: 425px;
-}
-}
+/*-------------------------------------------------Media queries--*/
 
-/*---------------Home page font-size media queries--------------*/
+/*--Home page font-size media queries--*/
 @media (min-width: 0px) {
-
 .container-prehome h1 {
       font-size: 3.75rem;
   }
@@ -619,28 +360,6 @@
   }
 }
 
-
-/*@media (min-width: 768px) {
-
-.container-prehome h1 {
-      font-size: 5.5rem;
-  }
-
-  .container-prehome h3 {
-      font-size: 2.0rem;
-  }
-}*/
-
-/*@media (min-width: 992px) {
-.container-prehome h1 {
-      font-size: 6.5rem;
-  }
-
-  .container-prehome h3 {
-      font-size: 2.5rem;
-  }
-}*/
-
 @media (min-width: 1200px) {
   
   .container-prehome h1 {
@@ -652,8 +371,7 @@
   }
 }
 
-/*--------------Sign-up form & Twitter feed media queries-----------------*/
-
+/*--Home page center align sign-up form & Twitter feed below 768px--*/
 @media (max-width: 768px) {
   .signup-form {
     margin-left: auto!important;
@@ -666,45 +384,11 @@
 }
 }
 
+/*--Dates page Ensure dates-table does not display less than 425px for tablet and above--*/
+@media (min-width: 576px){
+.dates-table {
+    min-width: 425px;
+}
+}
 
 
-
-/*--------------Sign-up form media queries-----------------*/
-/*@media (max-width: 1116px) {
-  .signup-form {
-    padding: 10px 10px 10px 10px;
-    margin-top: 70px;
-    margin-bottom: 5px;
-  }
-
-  label {
-    display: inline-block;
-    margin-bottom: 0;
-    font-size: small;
-  }
-
-  form h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .text-input {
-    height: 20px;
-  }
-
-  .form-control {
-    font-size: 0.8rem;
-  }
-
-  .join-button {
-    margin-top: 10px;
-    font-size: 80%;
-    padding: 4px 10px 4px 10px;
-  }
-
-  .twitter-timeline {
-    margin-top: 70px !important;
-    width: 250px !important;
-    height: 225px !important;
-  }
-}*/
