@@ -19,18 +19,18 @@
 }
 
 .navbar-light .navbar-brand {
-  color: #f8f9fa;
+  color: whitesmoke;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #f8f9fa;
+  color: whitesmoke;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #f8f9fa;
+  color: whitesmoke;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -42,6 +42,12 @@
   border-color: transparent;
 }
 
+.navbar-toggler:focus {
+    background-color:#15181a;
+    outline: none;
+}
+/*-- Code for navbar toggler background color and outline change here: https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4 --*/
+
 .menu-item {
   margin-left: 3em;
 }
@@ -51,16 +57,16 @@
 }
 
 .navbar-brand:hover {
-    color:#f8f9fa!important;
+    color:whitesmoke!important;
 }
 
-/*-------------------------------------------------General--*/
+/*-------------------------------------------------General (All pages excluding Home)--*/
 
 .page-heading {
   font-family: "Audiowide", sans-serif;
   color: whitesmoke;
   justify-content: start;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 20px
 }
 
@@ -87,7 +93,7 @@
 }
 
 .jumbotron {
-    color: #fff;
+    color: whitesmoke;
     justify-content: center;
     background-color: transparent;
     margin-top: auto;
@@ -105,11 +111,11 @@
     }
 
 .signup {
-        justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .signup-form {
-  color: #fff;
+  color: whitesmoke;
   background-color: rgba(60, 60, 60, 0.8);
   max-width: 316px;
   flex: 400px;
@@ -125,7 +131,7 @@
 
 .text-input {
   background: transparent;
-  color: #fafafa;
+  color: whitesmoke;
   height: 25px;
 }
 
@@ -136,12 +142,12 @@
   text-align: center;
   font-size: 100%;
   background-color: #f16c6b;
-  color: #fafafa;
+  color: whitesmoke;
   display: block;
 }
 
 .join-button:hover {
-  background-color: #fafafa;
+  background-color: whitesmoke;
   color: #f16c6b;
 }
 
@@ -176,12 +182,12 @@
 /*--End portrait image center--*/
   
 .container-about p {
-  color: white;
+  color: whitesmoke;
   font-family: "Roboto Mono", sans-serif;
 }
 
 .portrait {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /*-------------------------------------------------Mixes--*/
@@ -255,15 +261,6 @@
   justify-content: center;
 }
 
-.dates-form {
-  color: #fff;
-  background-color: rgba(120, 143, 18, 0.849);
-  padding: 20px 20px 20px 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: inline-flex!important;
-}
-
 .dates-table {
     margin-top: 20px;
 }
@@ -278,7 +275,7 @@
   background: transparent;
   color: black;
   height: 25px;
-  background-color: #cccccc;
+  background-color: whitesmoke;
 }
 
 /*--Formatting for cross in top right of booking form--*/
@@ -295,7 +292,6 @@
 
 /*-------------------------------------------------Contact--*/
 .container-contact {
-  
   background: url(../images/djdecks.jpg) no-repeat center center;
   /*--Image from Alexander Popov - https://unsplash.com/@5tep5?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText--*/
   -webkit-background-size: cover;
@@ -310,7 +306,7 @@
 }
 
 .contact-form {
-  color: #fff;
+  color: whitesmoke;
   background-color: rgba(60, 60, 60, 0.9);
   max-width: 400px;
   flex: 400px;
@@ -329,44 +325,44 @@
 
 /*--Home page font-size media queries--*/
 @media (min-width: 0px) {
-.container-prehome h1 {
+.container-home h1 {
       font-size: 3.75rem;
   }
 
-  .container-prehome h3 {
+  .container-home h3 {
       font-size: 2.0rem;
   }
 }
 
 @media (min-width: 320px) {
 
-.container-prehome h1 {
+.container-home h1 {
       font-size: 4.5rem;
   }
 
-  .container-prehome h3 {
+  .container-home h3 {
       font-size: 2.0rem;
   }
 }
 
 @media (min-width: 576px) {
 
-.container-prehome h1 {
+.container-home h1 {
       font-size: 6.5rem;
   }
 
-  .container-prehome h3 {
+  .container-home h3 {
       font-size: 2.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   
-  .container-prehome h1 {
+  .container-home h1 {
       font-size: 7.5rem;
   }
 
-  .container-prehome h3 {
+  .container-home h3 {
       font-size: 3.0rem;
   }
 }
@@ -391,4 +387,18 @@
 }
 }
 
+/*--Remove padding for Home and About pages under 450px to improve alignment with other pages--*/
+@media (max-width: 450px){
+.container-home .col-md-6, .container-home .col-sm-12, .container-about .col-md-6, .container-about .col-lg-6, .container-about .col-md-5, .container-about .col-lg-5 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-about .col-md-6, .container-about .col-lg-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
 

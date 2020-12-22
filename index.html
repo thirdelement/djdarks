@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 signup">
                     <!-- Sign-up form -->
-                    <form class="signup-form ml-auto" onsubmit="myFunction()">
+                    <form class="signup-form ml-auto" onsubmit="signupFunction()">
                         <h4>Sign up for news & mixes</h4>
                         <label for="fname">First Name</label>
                         <input class="text-input form-control" id="fname" type="text" name="first_name"
@@ -96,7 +96,7 @@
         <div class="container-fluid container-about">
             <h2 class="page-heading"><i class="far fa-address-card"></i> About</h2>
             <div class="row">
-                <div class="col-md-1 col-lg-2"></div>
+                <div class="col-md-1 col-lg-1"></div>
                 <div class="col-xs-12 col-md-6 col-lg-6">
                     <p class="first-paragraph">
                         Born in mid-70s south London, DRKS was raised listening to soul / rare groove and reggae. Any
@@ -117,7 +117,7 @@
                         good.
                     </p>
                 </div>
-                <div class="col-xs-12 col-md-5 col-lg-4">
+                <div class="col-xs-12 col-md-5 col-lg-5">
                     <div class="portrait">
                         <img src="assets/images/about-pic-small.jpg" class="img-fluid shadow rounded"
                             alt="DJ DRKS portrait pic" />
@@ -218,7 +218,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form onsubmit="myFunction()">
+                                    <form onsubmit="bookingFunction()">
                                         <div class="row">
                                             <div class="col">
                                                 <input class="text-input form-control" id="fname1" type="text"
@@ -263,7 +263,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- Contact form -->
-                    <form class="contact-form" onsubmit="myFunction()">
+                    <form class="contact-form" onsubmit="signupFunction()">
                         <h4>Send DRKS a message</h4>
                         <label for="fname2">First Name</label>
                         <input class="text-input form-control" id="fname2" type="text" name="first_name"
@@ -311,8 +311,13 @@
     <!-- END Java script for modal -->
     <!-- Java script for submit confirmation for forms: https://www.w3schools.com/js/js_popup.asp -->
     <script>
-        function myFunction() {
+        function bookingFunction() {
             alert("Thank you for your booking.");
+        }
+    </script>
+    <script>
+        function signupFunction() {
+            alert("Thank you for your message.");
         }
     </script>
     <!-- END Java script for submit confirmation -->
