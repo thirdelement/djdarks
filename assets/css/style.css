@@ -127,6 +127,8 @@
 
 .form-control {
   border-radius: 0;
+  padding-top: 0.2rem;
+  /*--Padding-top edited to enable placeholder text to be viewable in IE11--*/
 }
 
 .text-input {
