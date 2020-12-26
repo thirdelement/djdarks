@@ -2,6 +2,8 @@
 
 [View the live project here.](https://thirdelement.github.io/djdarks/)
 
+![Images of landing page shown on multiple devices](assets/images/readme-images/multiple-screens.jpg)
+
 This is the promotional website for DJ DRKS.   It is designed to be viewed on a range of devices including desktop PCs, tablets and phones to aid navigation for long-term fans and new followers alike.
 
 ## User Experience (UX)
@@ -39,7 +41,7 @@ This is the promotional website for DJ DRKS.   It is designed to be viewed on a 
             <h2 align="left"><img src="assets/images/readme-images/about-text.jpg"></h2> 
         -   The Font colour used throughout is whitesmoke for readability and to reduce glare.  When hovering over navbar menu links a contrasting blue is used to match the purple, blue and violet page backgrounds.  
             <h2 align="left"><img src="assets/images/readme-images/blue-menu-link.jpg"></h2>
-        -   All forms are in grey with some transparency so as not to detract from the images.  The submit buttons are red/pink for the sign-up and contact forms and yellow for booking dates.  The red/pink is a standard call-to-action colour and contrasts well with the background image.  Yellow is used for the booking buttons to match the orange filter in the DJ image on the Dates page.
+        -   All forms are in grey with some transparency so as not to detract from the background images.  The submit buttons are red/pink for the sign-up and contact forms and yellow for booking dates.  The red/pink is a standard call-to-action colour and contrasts well with the background image.  Yellow is used for the booking buttons to match the orange filter in the DJ image on the Dates page.
             <h2 align="left"><img src="assets/images/readme-images/signup-form.jpg"></h2>
             <h2 align="left"><img src="assets/images/readme-images/booking-form.jpg"></h2>
     -   #### Imagery
@@ -82,6 +84,8 @@ This is the promotional website for DJ DRKS.   It is designed to be viewed on a 
     - Font Awesome was used for the icon added to the header for all except Home pages.
 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive.
+1. [JavaScript:](https://en.wikipedia.org/wiki/JavaScript)
+    - JavaScript was used for the form alert and provided as part of the Bootstrap booking form.
 1. [GitPod](https://gitpod.io/)
     - GitPod was used for code editing, version control, committing and pushing to GitHub.
 1. [GitHub:](https://github.com/)
@@ -114,7 +118,7 @@ The W3C Markup Validation Service and CSS Validation Service were used to valida
         2. The visitor will receive confirmation on submission of all forms.   When hovering on buttons and options these will respond with a colour or shade change.
             <h2 align="left"><img src="assets/images/readme-images/signup-alert.jpg"></h2>
         3. The site has been laid out in a clear, straightforward way.  The navbar is available on all pages so the visitor never loses any option or way back. 
-        4. The sign-up and contact forms include validation for each field where the visitor is prompted to enter a value within the data-type criteria.  Only once all criteria are met for each field can the submit button be activated.  The visitor receives a confirmation alert once sent and is returned to the Home page.
+        4. The sign-up and contact forms include validation for each field where the visitor is prompted to enter a value within the data-type criteria.  Once all criteria are met for each field the submit button can be activated.  The visitor receives a confirmation alert when the submit button is clicked and is returned to the site.
             <h2 align="left"><img src="assets/images/readme-images/signup-validation.jpg"></h2>
 
     3. As a First Time Visitor, I want to check if DRKS has social media.
@@ -123,7 +127,7 @@ The W3C Markup Validation Service and CSS Validation Service were used to valida
         2. The visitor is able to use the contact form for other queries relating to social media.
 
     4. As a First Time Visitor, I want to hear DRKS' music.
-        1. There is Mixes navbar option which links to the Mixes page containing DRKS mixes from SoundCloud and MixCloud.
+        1. There is a Mixes navbar option which links to the Mixes page containing DRKS mixes from SoundCloud and MixCloud.
         2. The sign-up form is clearly described as being for news and mixes.  A visitor is invited to complete and submit this for more music.
 
 -   #### Returning Visitor Goals
@@ -165,7 +169,7 @@ The W3C Markup Validation Service and CSS Validation Service were used to valida
 
 -   At a screen width below 270px the booking form spills outside the container div.  This is below the minimum screen width of any device tested (280px – Galaxy Fold) and so no further fix was implemented.
 -   In Microsoft Internet Explorer 11 the Twitter feed often does not load.  On Twitter’s website IE11 is not listed as a compatible browser (see About twitter.com supported browsers).
--   In Microsoft Internet Explorer the SoundCloud banner borders are not removed.
+-   In Microsoft Internet Explorer 11 the SoundCloud banner borders are not removed.
 
 ## Deployment
 
@@ -182,9 +186,9 @@ The project was deployed to GitHub pages using the below procedure:
 
 ### Code
 
--   [Bootstrap4.5.3](https://getbootstrap.com/docs/4.5/getting-started/introduction/): Bootstrap 4.5.3 was used throughout the site so that it is responsive to different devices and viewport sizes.
+-   [Bootstrap 4.5.3](https://getbootstrap.com/docs/4.5/getting-started/introduction/): Bootstrap 4.5.3 was used throughout the site so that it is responsive to different devices and viewport sizes.
 
--   On several occasions code was used from external sources in the following instances:
+-   Code was used from external sources in the following instances:
     - [Creating a custom navbar toggler](https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color)
     - [Changing the navbar toggle background colour and outline](https://stackoverflow.com/questions/50668594/remove-border-color-for-navbar-toggler-hamburger-icon-bootstrap-4)
     - [Sign-up and Contact form design ](https://courses.codeinstitute.net/courses)
@@ -192,11 +196,11 @@ The project was deployed to GitHub pages using the below procedure:
 
 ### Content
 
--   All content was written by the developer.
+-   All content was written by the developer apart from the instances of external source use mentioned above.
 
 ### Media
 
--   The background images for the Home, Mixes, Dates and Contact pages were found at https://unsplash.com/.   The image for the About page was found at https://www.deviantart.com/.  There links to the Creator page for each are:
+-   The background images for the Home, Mixes, Dates and Contact pages were found at https://unsplash.com/.   The image for the About page was found at https://www.deviantart.com/.  There are links to the Creator page for each below:
     - Homepage - [Nikolai Chernichenko](https://unsplash.com/@perfectcoding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
     - About - [Pulse-v2](https://www.deviantart.com/pulse-v2/art/Croydon-Skyline-16563186)
     - Mixes - [Fred Moon](https://unsplash.com/@fwed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
